@@ -1,5 +1,9 @@
 package net.mcreator.odmsttuf.init;
 
+import top.theillusivec4.curios.api.SlotTypePreset;
+import top.theillusivec4.curios.api.SlotTypeMessage;
+import top.theillusivec4.curios.api.CuriosApi;
+
 import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.InterModComms;
