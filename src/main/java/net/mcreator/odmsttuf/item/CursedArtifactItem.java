@@ -9,6 +9,7 @@ import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 
+import net.mcreator.odmsttuf.procedures.CursedArtifactBaubleIsUnequippedProcedure;
 import net.mcreator.odmsttuf.procedures.CursedArtifactBaubleIsEquippedProcedure;
 
 public class CursedArtifactItem extends Item implements ICurioItem {
@@ -24,5 +25,10 @@ public class CursedArtifactItem extends Item implements ICurioItem {
 	@Override
 	public void onEquip(SlotContext slotContext, ItemStack prevStack, ItemStack stack) {
 		CursedArtifactBaubleIsEquippedProcedure.execute(slotContext.entity());
+	}
+
+	@Override
+	public void onUnequip(SlotContext slotContext, ItemStack newStack, ItemStack stack) {
+		CursedArtifactBaubleIsUnequippedProcedure.execute(slotContext.entity());
 	}
 }

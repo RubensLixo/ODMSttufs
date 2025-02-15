@@ -17,7 +17,7 @@
           }
         ]
       },
-      "path": "~/halk"
+      "path": "~/halk/WHOZA"
     },
     {
       "name": "WarhammerOfZillyhooLivingEntityIsHitWithTool",
@@ -40,7 +40,7 @@
           }
         ]
       },
-      "path": "~/halk"
+      "path": "~/halk/WHOZA"
     },
     {
       "name": "WarhammerOfZillyhoo",
@@ -54,7 +54,7 @@
           "src/main/java/net/mcreator/odmsttuf/item/WarhammerOfZillyhooItem.java"
         ]
       },
-      "path": "~/halk"
+      "path": "~/halk/WHOZA"
     },
     {
       "name": "WHOZATIVAR",
@@ -73,7 +73,7 @@
           }
         ]
       },
-      "path": "~/halk"
+      "path": "~/halk/WHOZA"
     },
     {
       "name": "CommandWHOZ",
@@ -86,7 +86,7 @@
           "src/main/java/net/mcreator/odmsttuf/command/CommandWHOZCommand.java"
         ]
       },
-      "path": "~/halk"
+      "path": "~/halk/WHOZA"
     },
     {
       "name": "GODTIERDAMAGE",
@@ -99,7 +99,7 @@
           "src/main/resources/data/odmsttuf/damage_type/godtierdamage.json"
         ]
       },
-      "path": "~/halk"
+      "path": "~/halk/WHOZA"
     },
     {
       "name": "CursedArtifactBaubleIsEquipped",
@@ -118,7 +118,55 @@
           }
         ]
       },
-      "path": "~/thur"
+      "path": "~/thur/CursedArtifact"
+    },
+    {
+      "name": "CursedArtifact",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cursed_artifact",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/odmsttuf/models/item/cursed_artifact.json",
+          "src/main/java/net/mcreator/odmsttuf/item/CursedArtifactItem.java"
+        ]
+      },
+      "path": "~/thur/CursedArtifact"
+    },
+    {
+      "name": "CursedArtifactBaubleIsUnequipped",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cursed_artifact_bauble_is_unequipped",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/odmsttuf/procedures/CursedArtifactBaubleIsUnequippedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/thur/CursedArtifact"
+    },
+    {
+      "name": "SteampunkGlasses",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "steampunk_glasses",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/odmsttuf/models/item/steampunk_glasses.json",
+          "src/main/java/net/mcreator/odmsttuf/item/SteampunkGlassesItem.java",
+          "src/main/java/net/mcreator/odmsttuf/client/renderer/SteampunkGlassesRenderer.java"
+        ]
+      },
+      "path": "~/builder/SteampunkGlasses"
     },
     {
       "name": "CursedArtifactWhileBaubleIsEquippedTick",
@@ -141,21 +189,102 @@
           }
         ]
       },
-      "path": "~/thur"
+      "path": "~/thur/CursedArtifact"
     },
     {
-      "name": "CursedArtifact",
-      "type": "curiosbauble",
+      "name": "SteampunkGlassesBaubleIsEquipped",
+      "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "cursed_artifact",
+      "registry_name": "steampunk_glasses_bauble_is_equipped",
       "metadata": {
         "files": [
-          "src/main/resources/assets/odmsttuf/models/item/cursed_artifact.json",
-          "src/main/java/net/mcreator/odmsttuf/item/CursedArtifactItem.java"
+          "src/main/java/net/mcreator/odmsttuf/procedures/SteampunkGlassesBaubleIsEquippedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
         ]
       },
-      "path": "~/thur"
+      "path": "~/builder/SteampunkGlasses"
+    },
+    {
+      "name": "SteampunkGlassesBaubleIsUnequipped",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "steampunk_glasses_bauble_is_unequipped",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/odmsttuf/procedures/SteampunkGlassesBaubleIsUnequippedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/builder/SteampunkGlasses"
+    },
+    {
+      "name": "SteampunkGlassesWhileBaubleIsEquippedTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "steampunk_glasses_while_bauble_is_equipped_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/odmsttuf/procedures/SteampunkGlassesWhileBaubleIsEquippedTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/builder/SteampunkGlasses"
+    },
+    {
+      "name": "AvilSpecialist",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "avil_specialist",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/odmsttuf/procedures/AvilSpecialistProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/builder/SteampunkGlasses"
+    },
+    {
+      "name": "AnvilSpecialist",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "anvil_specialist",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/odmsttuf/procedures/AnvilSpecialistProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/builder/SteampunkGlasses"
     }
   ],
   "variable_elements": [],
@@ -177,6 +306,7 @@
       "item.odmsttuf.cursed_artifact": "Cursed Artifact",
       "death.attack.godtierdamage": "%1$s WAS KILLED BY THE GOD OF THE AIR",
       "death.attack.godtierdamage.player": "%1$s WAS KILLED BY THE GOD OF THE AIR",
+      "item.odmsttuf.steampunk_glasses": "Steampunk Glasses",
       "item.odmsttuf.warhammer_of_zillyhoo": "Warhammer Of Zillyhoo",
       "death.attack.godtierdamage.item": "%1$s WAS KILLED BY THE GOD OF THE AIR (%2$s)"
     }
@@ -186,11 +316,21 @@
     "children": [
       {
         "name": "thur",
-        "children": []
+        "children": [
+          {
+            "name": "CursedArtifact",
+            "children": []
+          }
+        ]
       },
       {
         "name": "builder",
-        "children": []
+        "children": [
+          {
+            "name": "SteampunkGlasses",
+            "children": []
+          }
+        ]
       },
       {
         "name": "luis",
@@ -198,7 +338,12 @@
       },
       {
         "name": "halk",
-        "children": []
+        "children": [
+          {
+            "name": "WHOZA",
+            "children": []
+          }
+        ]
       },
       {
         "name": "dark",
