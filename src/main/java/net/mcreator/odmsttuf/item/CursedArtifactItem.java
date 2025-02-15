@@ -1,18 +1,11 @@
 
 package net.mcreator.odmsttuf.item;
 
-import top.theillusivec4.curios.api.type.capability.ICurioItem;
-import top.theillusivec4.curios.api.SlotContext;
-
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-
-import net.mcreator.odmsttuf.procedures.CursedArtifactBaubleIsUnequippedProcedure;
-import net.mcreator.odmsttuf.procedures.CursedArtifactBaubleIsEquippedProcedure;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import javax.annotation.Nullable;
 
 public class CursedArtifactItem extends Item implements ICurioItem {
+
 	public CursedArtifactItem() {
 		super(new Item.Properties().stacksTo(1).rarity(Rarity.EPIC));
 	}
@@ -31,4 +24,5 @@ public class CursedArtifactItem extends Item implements ICurioItem {
 	public void onUnequip(SlotContext slotContext, ItemStack newStack, ItemStack stack) {
 		CursedArtifactBaubleIsUnequippedProcedure.execute(slotContext.entity());
 	}
+
 }

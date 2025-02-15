@@ -1,9 +1,6 @@
 package net.mcreator.odmsttuf.procedures;
 
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-
-import java.util.UUID;
+import net.minecraftforge.eventbus.api.Event;
 
 public class CursedArtifactBaubleIsUnequippedProcedure {
 	public static void execute(Entity entity) {

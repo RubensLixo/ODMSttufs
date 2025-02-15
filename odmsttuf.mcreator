@@ -17,7 +17,7 @@
           }
         ]
       },
-      "path": "~/halk/WHOZA"
+      "path": "~/halk"
     },
     {
       "name": "WarhammerOfZillyhooLivingEntityIsHitWithTool",
@@ -40,7 +40,7 @@
           }
         ]
       },
-      "path": "~/halk/WHOZA"
+      "path": "~/halk"
     },
     {
       "name": "WarhammerOfZillyhoo",
@@ -54,7 +54,7 @@
           "src/main/java/net/mcreator/odmsttuf/item/WarhammerOfZillyhooItem.java"
         ]
       },
-      "path": "~/halk/WHOZA"
+      "path": "~/halk"
     },
     {
       "name": "WHOZATIVAR",
@@ -73,7 +73,7 @@
           }
         ]
       },
-      "path": "~/halk/WHOZA"
+      "path": "~/halk"
     },
     {
       "name": "CommandWHOZ",
@@ -86,7 +86,7 @@
           "src/main/java/net/mcreator/odmsttuf/command/CommandWHOZCommand.java"
         ]
       },
-      "path": "~/halk/WHOZA"
+      "path": "~/halk"
     },
     {
       "name": "GODTIERDAMAGE",
@@ -99,7 +99,7 @@
           "src/main/resources/data/odmsttuf/damage_type/godtierdamage.json"
         ]
       },
-      "path": "~/halk/WHOZA"
+      "path": "~/halk"
     },
     {
       "name": "CursedArtifactBaubleIsEquipped",
@@ -118,55 +118,7 @@
           }
         ]
       },
-      "path": "~/thur/CursedArtifact"
-    },
-    {
-      "name": "CursedArtifact",
-      "type": "curiosbauble",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cursed_artifact",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/odmsttuf/models/item/cursed_artifact.json",
-          "src/main/java/net/mcreator/odmsttuf/item/CursedArtifactItem.java"
-        ]
-      },
-      "path": "~/thur/CursedArtifact"
-    },
-    {
-      "name": "CursedArtifactBaubleIsUnequipped",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cursed_artifact_bauble_is_unequipped",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/odmsttuf/procedures/CursedArtifactBaubleIsUnequippedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/thur/CursedArtifact"
-    },
-    {
-      "name": "SteampunkGlasses",
-      "type": "curiosbauble",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "steampunk_glasses",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/odmsttuf/models/item/steampunk_glasses.json",
-          "src/main/java/net/mcreator/odmsttuf/item/SteampunkGlassesItem.java",
-          "src/main/java/net/mcreator/odmsttuf/client/renderer/SteampunkGlassesRenderer.java"
-        ]
-      },
-      "path": "~/builder/SteampunkGlasses"
+      "path": "~/thur"
     },
     {
       "name": "CursedArtifactWhileBaubleIsEquippedTick",
@@ -189,7 +141,21 @@
           }
         ]
       },
-      "path": "~/thur/CursedArtifact"
+      "path": "~/thur"
+    },
+    {
+      "name": "CursedArtifact",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cursed_artifact",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/odmsttuf/models/item/cursed_artifact.json",
+          "src/main/java/net/mcreator/odmsttuf/item/CursedArtifactItem.java"
+        ]
+      },
+      "path": "~/thur"
     },
     {
       "name": "SteampunkGlassesBaubleIsEquipped",
@@ -200,6 +166,25 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/odmsttuf/procedures/SteampunkGlassesBaubleIsEquippedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/builder/SteampunkGlasses"
+    },
+    {
+      "name": "SteampunkGlassesWhileBaubleIsEquippedTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "steampunk_glasses_while_bauble_is_equipped_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/odmsttuf/procedures/SteampunkGlassesWhileBaubleIsEquippedTickProcedure.java"
         ],
         "dependencies": [
           {
@@ -230,14 +215,14 @@
       "path": "~/builder/SteampunkGlasses"
     },
     {
-      "name": "SteampunkGlassesWhileBaubleIsEquippedTick",
+      "name": "CursedArtifactBaubleIsUnequipped",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "steampunk_glasses_while_bauble_is_equipped_tick",
+      "registry_name": "cursed_artifact_bauble_is_unequipped",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/odmsttuf/procedures/SteampunkGlassesWhileBaubleIsEquippedTickProcedure.java"
+          "src/main/java/net/mcreator/odmsttuf/procedures/CursedArtifactBaubleIsUnequippedProcedure.java"
         ],
         "dependencies": [
           {
@@ -246,7 +231,7 @@
           }
         ]
       },
-      "path": "~/builder/SteampunkGlasses"
+      "path": "~/thur/CursedArtifact"
     },
     {
       "name": "AvilSpecialist",
@@ -285,6 +270,44 @@
         ]
       },
       "path": "~/builder/SteampunkGlasses"
+    },
+    {
+      "name": "SteampunkGlasses",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "steampunk_glasses",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/odmsttuf/models/item/steampunk_glasses.json",
+          "src/main/java/net/mcreator/odmsttuf/item/SteampunkGlassesItem.java",
+          "src/main/java/net/mcreator/odmsttuf/client/renderer/SteampunkGlassesRenderer.java"
+        ]
+      },
+      "path": "~/builder/SteampunkGlasses"
+    },
+    {
+      "name": "Revive",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "revive",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/odmsttuf/procedures/ReviveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/halk"
     }
   ],
   "variable_elements": [],
@@ -315,28 +338,6 @@
     "name": "~",
     "children": [
       {
-        "name": "thur",
-        "children": [
-          {
-            "name": "CursedArtifact",
-            "children": []
-          }
-        ]
-      },
-      {
-        "name": "builder",
-        "children": [
-          {
-            "name": "SteampunkGlasses",
-            "children": []
-          }
-        ]
-      },
-      {
-        "name": "luis",
-        "children": []
-      },
-      {
         "name": "halk",
         "children": [
           {
@@ -354,11 +355,33 @@
         "children": []
       },
       {
+        "name": "builder",
+        "children": [
+          {
+            "name": "SteampunkGlasses",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "miguel",
+        "children": []
+      },
+      {
         "name": "arthur",
         "children": []
       },
       {
-        "name": "miguel",
+        "name": "thur",
+        "children": [
+          {
+            "name": "CursedArtifact",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "luis",
         "children": []
       }
     ]
