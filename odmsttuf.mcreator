@@ -100,6 +100,29 @@
         ]
       },
       "path": "~/halk"
+    },
+    {
+      "name": "Revive",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "revive",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/odmsttuf/procedures/ReviveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/halk"
     }
   ],
   "variable_elements": [],
