@@ -17,6 +17,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.odmsttuf.init.OdmsttufModTabs;
 import net.mcreator.odmsttuf.init.OdmsttufModItems;
 
 import java.util.function.Supplier;
@@ -40,6 +41,8 @@ public class OdmsttufMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
 		OdmsttufModItems.REGISTRY.register(bus);
+
+		OdmsttufModTabs.REGISTRY.register(bus);
 
 		// Start of user code block mod init
 		// End of user code block mod init

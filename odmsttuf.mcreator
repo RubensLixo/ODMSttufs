@@ -100,6 +100,62 @@
         ]
       },
       "path": "~/halk"
+    },
+    {
+      "name": "CursedArtifactBaubleIsEquipped",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cursed_artifact_bauble_is_equipped",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/odmsttuf/procedures/CursedArtifactBaubleIsEquippedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/thur"
+    },
+    {
+      "name": "CursedArtifactWhileBaubleIsEquippedTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cursed_artifact_while_bauble_is_equipped_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/odmsttuf/procedures/CursedArtifactWhileBaubleIsEquippedTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/thur"
+    },
+    {
+      "name": "CursedArtifact",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cursed_artifact",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/odmsttuf/models/item/cursed_artifact.json",
+          "src/main/java/net/mcreator/odmsttuf/item/CursedArtifactItem.java"
+        ]
+      },
+      "path": "~/thur"
     }
   ],
   "variable_elements": [],
@@ -118,6 +174,7 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
+      "item.odmsttuf.cursed_artifact": "Cursed Artifact",
       "death.attack.godtierdamage": "%1$s WAS KILLED BY THE GOD OF THE AIR",
       "death.attack.godtierdamage.player": "%1$s WAS KILLED BY THE GOD OF THE AIR",
       "item.odmsttuf.warhammer_of_zillyhoo": "Warhammer Of Zillyhoo",
@@ -146,6 +203,18 @@
       {
         "name": "dark",
         "children": []
+      },
+      {
+        "name": "isa",
+        "children": []
+      },
+      {
+        "name": "arthur",
+        "children": []
+      },
+      {
+        "name": "miguel",
+        "children": []
       }
     ]
   },
@@ -160,8 +229,13 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [],
+    "mcreatorDependencies": [
+      "manabarlib",
+      "curios_api",
+      "geckolib"
+    ],
     "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.odmsttuf"
   },
   "mcreatorVersion": 202400232117
