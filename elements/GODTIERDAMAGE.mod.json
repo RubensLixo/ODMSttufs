@@ -1,0 +1,12 @@
+{
+  "_fv": 66,
+  "_type": "damagetype",
+  "definition": {
+    "exhaustion": 3.0,
+    "scaling": "always",
+    "effects": "drowning",
+    "normalDeathMessage": "%1$s WAS KILLED BY THE GOD OF THE AIR",
+    "itemDeathMessage": "%1$s WAS KILLED BY THE GOD OF THE AIR (%2$s)",
+    "playerDeathMessage": "%1$s WAS KILLED BY THE GOD OF THE AIR"
+  }
+}

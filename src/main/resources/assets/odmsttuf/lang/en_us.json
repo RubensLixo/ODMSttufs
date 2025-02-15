@@ -1,3 +1,6 @@
 {
-  "item.odmsttuf.warhammer_of_zillyhoo": "Warhammer Of Zillyhoo"
+  "death.attack.godtierdamage": "%1$s WAS KILLED BY THE GOD OF THE AIR",
+  "death.attack.godtierdamage.player": "%1$s WAS KILLED BY THE GOD OF THE AIR",
+  "item.odmsttuf.warhammer_of_zillyhoo": "Warhammer Of Zillyhoo",
+  "death.attack.godtierdamage.item": "%1$s WAS KILLED BY THE GOD OF THE AIR (%2$s)"
 }
