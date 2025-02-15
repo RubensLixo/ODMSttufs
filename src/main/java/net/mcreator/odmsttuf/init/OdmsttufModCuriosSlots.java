@@ -1,0 +1,14 @@
+package net.mcreator.odmsttuf.init;
+
+import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.InterModComms;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+
+@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
+public class OdmsttufModCuriosSlots {
+	@SubscribeEvent
+	public static void enqueueIMC(final InterModEnqueueEvent event) {
+		InterModComms.sendTo(CuriosApi.MODID, SlotTypeMessage.REGISTER_TYPE, () -> SlotTypePreset.NECKLACE.getMessageBuilder().size(1).build());
+	}
+}
