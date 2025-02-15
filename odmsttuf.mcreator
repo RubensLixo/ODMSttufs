@@ -1,15 +1,137 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "WarhammerOfZillyhooToolInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warhammer_of_zillyhoo_tool_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/odmsttuf/procedures/WarhammerOfZillyhooToolInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/halk"
+    },
+    {
+      "name": "WarhammerOfZillyhooLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warhammer_of_zillyhoo_living_entity_is_hit_with_tool",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/odmsttuf/procedures/WarhammerOfZillyhooLivingEntityIsHitWithToolProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/halk"
+    },
+    {
+      "name": "WarhammerOfZillyhoo",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warhammer_of_zillyhoo",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/odmsttuf/models/item/warhammer_of_zillyhoo.json",
+          "src/main/java/net/mcreator/odmsttuf/item/WarhammerOfZillyhooItem.java"
+        ]
+      },
+      "path": "~/halk"
+    },
+    {
+      "name": "WHOZATIVAR",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "whozativar",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/odmsttuf/procedures/WHOZATIVARProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/halk"
+    },
+    {
+      "name": "CommandWHOZ",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "command_whoz",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/odmsttuf/command/CommandWHOZCommand.java"
+        ]
+      },
+      "path": "~/halk"
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
-  "tag_elements": {},
+  "tag_elements": {
+    "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:WarhammerOfZillyhoo"
+    ],
+    "ITEMS:minecraft:axes": [
+      "~CUSTOM:WarhammerOfZillyhoo"
+    ],
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:WarhammerOfZillyhoo"
+    ]
+  },
   "tab_element_order": {},
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.odmsttuf.warhammer_of_zillyhoo": "Warhammer Of Zillyhoo"
+    }
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "thur",
+        "children": []
+      },
+      {
+        "name": "builder",
+        "children": []
+      },
+      {
+        "name": "luis",
+        "children": []
+      },
+      {
+        "name": "halk",
+        "children": []
+      },
+      {
+        "name": "dark",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "odmsttuf",

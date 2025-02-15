@@ -1,0 +1,37 @@
+{
+  "_fv": 66,
+  "_type": "tool",
+  "definition": {
+    "toolType": "MultiTool",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "zillyhoo_hammer",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Warhammer Of Zillyhoo",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTabs": [],
+    "efficiency": 12.0,
+    "attackSpeed": 1.8,
+    "enchantability": 20,
+    "damageVsEntity": 16.5,
+    "usageCount": 0,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [],
+    "immuneToFire": false,
+    "blockDropsTier": "NETHERITE",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "WarhammerOfZillyhooLivingEntityIsHitWithTool"
+    },
+    "onItemInInventoryTick": {
+      "name": "WarhammerOfZillyhooToolInInventoryTick"
+    }
+  }
+}
