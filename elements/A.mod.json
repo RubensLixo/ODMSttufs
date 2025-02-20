@@ -87,12 +87,12 @@
     "bootsPiglinNeutral": {
       "fixedValue": false
     },
-    "maxDamage": 10,
+    "maxDamage": 0,
     "damageValueHelmet": 10,
     "damageValueBody": 0,
     "damageValueLeggings": 0,
     "damageValueBoots": 0,
-    "enchantability": 30,
+    "enchantability": 0,
     "toughness": 0.0,
     "knockbackResistance": 0.01,
     "equipSound": {

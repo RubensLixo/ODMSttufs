@@ -38,6 +38,8 @@ public class ReviveProcedure {
 				} else if (event != null && event.hasResult()) {
 					event.setResult(Event.Result.DENY);
 				}
+				if (entity instanceof LivingEntity _entity)
+					_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) / 2));
 			}
 			if (!damagesource.is(DamageTypes.MOB_ATTACK)) {
 				if (event != null && event.isCancelable()) {
@@ -45,6 +47,8 @@ public class ReviveProcedure {
 				} else if (event != null && event.hasResult()) {
 					event.setResult(Event.Result.DENY);
 				}
+				if (entity instanceof LivingEntity _entity)
+					_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) / 2));
 			}
 			if (!damagesource.is(DamageTypes.PLAYER_EXPLOSION)) {
 				if (event != null && event.isCancelable()) {
@@ -52,6 +56,8 @@ public class ReviveProcedure {
 				} else if (event != null && event.hasResult()) {
 					event.setResult(Event.Result.DENY);
 				}
+				if (entity instanceof LivingEntity _entity)
+					_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) / 2));
 			}
 			if (!damagesource.is(DamageTypes.MOB_PROJECTILE)) {
 				if (event != null && event.isCancelable()) {
@@ -59,6 +65,8 @@ public class ReviveProcedure {
 				} else if (event != null && event.hasResult()) {
 					event.setResult(Event.Result.DENY);
 				}
+				if (entity instanceof LivingEntity _entity)
+					_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) / 2));
 			}
 			if (!damagesource.is(DamageTypes.MAGIC)) {
 				if (event != null && event.isCancelable()) {
@@ -66,6 +74,8 @@ public class ReviveProcedure {
 				} else if (event != null && event.hasResult()) {
 					event.setResult(Event.Result.DENY);
 				}
+				if (entity instanceof LivingEntity _entity)
+					_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) / 2));
 			}
 		}
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == OdmsttufModItems.WARHAMMER_OF_ZILLYHOO.get()) {
@@ -75,6 +85,8 @@ public class ReviveProcedure {
 				} else if (event != null && event.hasResult()) {
 					event.setResult(Event.Result.DENY);
 				}
+				if (entity instanceof LivingEntity _entity)
+					_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) / 2));
 			}
 			if (!damagesource.is(DamageTypes.MOB_ATTACK)) {
 				if (event != null && event.isCancelable()) {
@@ -82,6 +94,8 @@ public class ReviveProcedure {
 				} else if (event != null && event.hasResult()) {
 					event.setResult(Event.Result.DENY);
 				}
+				if (entity instanceof LivingEntity _entity)
+					_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) / 2));
 			}
 			if (!damagesource.is(DamageTypes.PLAYER_EXPLOSION)) {
 				if (event != null && event.isCancelable()) {
@@ -89,6 +103,8 @@ public class ReviveProcedure {
 				} else if (event != null && event.hasResult()) {
 					event.setResult(Event.Result.DENY);
 				}
+				if (entity instanceof LivingEntity _entity)
+					_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) / 2));
 			}
 			if (!damagesource.is(DamageTypes.MOB_PROJECTILE)) {
 				if (event != null && event.isCancelable()) {
@@ -96,6 +112,8 @@ public class ReviveProcedure {
 				} else if (event != null && event.hasResult()) {
 					event.setResult(Event.Result.DENY);
 				}
+				if (entity instanceof LivingEntity _entity)
+					_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) / 2));
 			}
 			if (!damagesource.is(DamageTypes.MAGIC)) {
 				if (event != null && event.isCancelable()) {
@@ -103,6 +121,8 @@ public class ReviveProcedure {
 				} else if (event != null && event.hasResult()) {
 					event.setResult(Event.Result.DENY);
 				}
+				if (entity instanceof LivingEntity _entity)
+					_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) / 2));
 			}
 		}
 	}

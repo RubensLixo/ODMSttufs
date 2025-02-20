@@ -24,7 +24,7 @@ public abstract class AItem extends ArmorItem {
 		super(new ArmorMaterial() {
 			@Override
 			public int getDurabilityForType(ArmorItem.Type type) {
-				return new int[]{13, 15, 16, 11}[type.getSlot().getIndex()] * 10;
+				return new int[]{13, 15, 16, 11}[type.getSlot().getIndex()] * 0;
 			}
 
 			@Override
@@ -34,7 +34,7 @@ public abstract class AItem extends ArmorItem {
 
 			@Override
 			public int getEnchantmentValue() {
-				return 30;
+				return 0;
 			}
 
 			@Override
