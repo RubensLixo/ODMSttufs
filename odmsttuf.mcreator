@@ -308,9 +308,100 @@
         ]
       },
       "path": "~/halk/WHOZA"
+    },
+    {
+      "name": "A",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "a",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/odmsttuf/item/AItem.java",
+          "src/main/resources/assets/odmsttuf/models/item/a_helmet.json"
+        ]
+      },
+      "path": "~/luis/Water Helmet"
+    },
+    {
+      "name": "AHelmetTickEvent",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "a_helmet_tick_event",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/odmsttuf/procedures/AHelmetTickEventProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/luis/Water Helmet"
+    },
+    {
+      "name": "WaterRevive",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_revive",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/odmsttuf/procedures/WaterReviveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/luis/Water Helmet"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "WaterReviveCount",
+      "type": "number",
+      "scope": "map",
+      "value": "1.0"
+    }
+  ],
   "sound_elements": [],
   "tag_elements": {
     "ITEMS:minecraft:pickaxes": [
@@ -326,6 +417,7 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
+      "item.odmsttuf.a_helmet": "Water Helmet",
       "item.odmsttuf.cursed_artifact": "Cursed Artifact",
       "death.attack.godtierdamage": "%1$s WAS KILLED BY THE GOD OF THE AIR",
       "death.attack.godtierdamage.player": "%1$s WAS KILLED BY THE GOD OF THE AIR",
@@ -366,7 +458,12 @@
       },
       {
         "name": "luis",
-        "children": []
+        "children": [
+          {
+            "name": "Water Helmet",
+            "children": []
+          }
+        ]
       }
     ]
   },

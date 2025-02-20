@@ -24,6 +24,7 @@ public class OdmsttufModTabs {
 		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(OdmsttufModItems.CURSED_ARTIFACT.get());
 			tabData.accept(OdmsttufModItems.STEAMPUNK_GLASSES.get());
+			tabData.accept(OdmsttufModItems.A_HELMET.get());
 		}
 	}
 }

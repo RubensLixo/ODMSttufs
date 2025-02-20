@@ -13,6 +13,7 @@ import net.minecraft.world.item.Item;
 import net.mcreator.odmsttuf.item.WarhammerOfZillyhooItem;
 import net.mcreator.odmsttuf.item.SteampunkGlassesItem;
 import net.mcreator.odmsttuf.item.CursedArtifactItem;
+import net.mcreator.odmsttuf.item.AItem;
 import net.mcreator.odmsttuf.OdmsttufMod;
 
 public class OdmsttufModItems {
@@ -20,6 +21,7 @@ public class OdmsttufModItems {
 	public static final RegistryObject<Item> WARHAMMER_OF_ZILLYHOO = REGISTRY.register("warhammer_of_zillyhoo", () -> new WarhammerOfZillyhooItem());
 	public static final RegistryObject<Item> CURSED_ARTIFACT = REGISTRY.register("cursed_artifact", () -> new CursedArtifactItem());
 	public static final RegistryObject<Item> STEAMPUNK_GLASSES = REGISTRY.register("steampunk_glasses", () -> new SteampunkGlassesItem());
+	public static final RegistryObject<Item> A_HELMET = REGISTRY.register("a_helmet", () -> new AItem.Helmet());
 	// Start of user code block custom items
 	// End of user code block custom items
 }
