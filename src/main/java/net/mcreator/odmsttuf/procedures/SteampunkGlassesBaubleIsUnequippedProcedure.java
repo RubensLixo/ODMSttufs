@@ -1,6 +1,11 @@
 package net.mcreator.odmsttuf.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraftforge.common.ForgeMod;
+
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+
+import java.util.UUID;
 
 public class SteampunkGlassesBaubleIsUnequippedProcedure {
 	public static void execute(Entity entity) {

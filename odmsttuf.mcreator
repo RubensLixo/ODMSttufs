@@ -17,7 +17,7 @@
           }
         ]
       },
-      "path": "~/halk"
+      "path": "~/halk/WHOZA"
     },
     {
       "name": "WarhammerOfZillyhooLivingEntityIsHitWithTool",
@@ -40,7 +40,7 @@
           }
         ]
       },
-      "path": "~/halk"
+      "path": "~/halk/WHOZA"
     },
     {
       "name": "WarhammerOfZillyhoo",
@@ -54,7 +54,7 @@
           "src/main/java/net/mcreator/odmsttuf/item/WarhammerOfZillyhooItem.java"
         ]
       },
-      "path": "~/halk"
+      "path": "~/halk/WHOZA"
     },
     {
       "name": "WHOZATIVAR",
@@ -73,7 +73,7 @@
           }
         ]
       },
-      "path": "~/halk"
+      "path": "~/halk/WHOZA"
     },
     {
       "name": "CommandWHOZ",
@@ -86,7 +86,7 @@
           "src/main/java/net/mcreator/odmsttuf/command/CommandWHOZCommand.java"
         ]
       },
-      "path": "~/halk"
+      "path": "~/halk/WHOZA"
     },
     {
       "name": "GODTIERDAMAGE",
@@ -99,7 +99,7 @@
           "src/main/resources/data/odmsttuf/damage_type/godtierdamage.json"
         ]
       },
-      "path": "~/halk"
+      "path": "~/halk/WHOZA"
     },
     {
       "name": "CursedArtifactBaubleIsEquipped",
@@ -118,7 +118,7 @@
           }
         ]
       },
-      "path": "~/thur"
+      "path": "~/thur/CursedArtifact"
     },
     {
       "name": "CursedArtifactWhileBaubleIsEquippedTick",
@@ -132,16 +132,16 @@
         ],
         "dependencies": [
           {
-            "name": "damagesource",
-            "type": "damagesource"
-          },
-          {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
-      "path": "~/thur"
+      "path": "~/thur/CursedArtifact"
     },
     {
       "name": "CursedArtifact",
@@ -155,7 +155,7 @@
           "src/main/java/net/mcreator/odmsttuf/item/CursedArtifactItem.java"
         ]
       },
-      "path": "~/thur"
+      "path": "~/thur/CursedArtifact"
     },
     {
       "name": "SteampunkGlassesBaubleIsEquipped",
@@ -307,7 +307,7 @@
           }
         ]
       },
-      "path": "~/halk"
+      "path": "~/halk/WHOZA"
     }
   ],
   "variable_elements": [],
@@ -347,14 +347,6 @@
         ]
       },
       {
-        "name": "dark",
-        "children": []
-      },
-      {
-        "name": "isa",
-        "children": []
-      },
-      {
         "name": "builder",
         "children": [
           {
@@ -362,14 +354,6 @@
             "children": []
           }
         ]
-      },
-      {
-        "name": "miguel",
-        "children": []
-      },
-      {
-        "name": "arthur",
-        "children": []
       },
       {
         "name": "thur",

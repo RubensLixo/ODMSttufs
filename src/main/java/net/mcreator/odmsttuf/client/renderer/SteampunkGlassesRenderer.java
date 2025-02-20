@@ -1,9 +1,27 @@
 package net.mcreator.odmsttuf.client.renderer;
 
+import top.theillusivec4.curios.api.client.ICurioRenderer;
+import top.theillusivec4.curios.api.SlotContext;
+
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.client.renderer.texture.OverlayTexture;
+import net.minecraft.client.renderer.entity.RenderLayerParent;
+import net.minecraft.client.renderer.entity.ItemRenderer;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.MultiBufferSource;
+import net.minecraft.client.model.EntityModel;
+import net.minecraft.client.Minecraft;
+
+import net.mcreator.odmsttuf.init.OdmsttufModLayerDefinitions;
+import net.mcreator.odmsttuf.client.model.Modelsteampunk_glasses;
+
+import com.mojang.blaze3d.vertex.VertexConsumer;
+import com.mojang.blaze3d.vertex.PoseStack;
+
 public class SteampunkGlassesRenderer implements ICurioRenderer {
-
 	private static final ResourceLocation TEXTURE = new ResourceLocation("odmsttuf", "textures/entities/steampunkglasses.png");
-
 	private final Modelsteampunk_glasses model;
 
 	public SteampunkGlassesRenderer() {
@@ -21,5 +39,4 @@ public class SteampunkGlassesRenderer implements ICurioRenderer {
 		VertexConsumer vertexconsumer = ItemRenderer.getArmorFoilBuffer(renderTypeBuffer, RenderType.armorCutoutNoCull(TEXTURE), false, stack.hasFoil());
 		this.model.renderToBuffer(matrixStack, vertexconsumer, light, OverlayTexture.NO_OVERLAY, 1.0F, 1.0F, 1.0F, 1.0F);
 	}
-
 }
