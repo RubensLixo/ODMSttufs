@@ -25,6 +25,8 @@ public class OdmsttufModTabs {
 			tabData.accept(OdmsttufModItems.CURSED_ARTIFACT.get());
 			tabData.accept(OdmsttufModItems.STEAMPUNK_GLASSES.get());
 			tabData.accept(OdmsttufModItems.A_HELMET.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+			tabData.accept(OdmsttufModItems.WATER_PICKAXE.get());
 		}
 	}
 }

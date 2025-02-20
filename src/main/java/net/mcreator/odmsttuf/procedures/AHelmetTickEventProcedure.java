@@ -6,8 +6,6 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.particles.ParticleTypes;
 
-import net.mcreator.odmsttuf.OdmsttufMod;
-
 public class AHelmetTickEventProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
@@ -20,8 +18,5 @@ public class AHelmetTickEventProcedure {
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles(ParticleTypes.SPLASH, x, (y - 1), z, 25, 0, 0, 0, 1);
 		}
-		OdmsttufMod.queueServerWork(35, () -> {
-			entity.setAirSupply((int) (entity.getAirSupply() - 1));
-		});
 	}
 }

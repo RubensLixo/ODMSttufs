@@ -10,6 +10,7 @@ import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.world.item.Item;
 
+import net.mcreator.odmsttuf.item.WaterPickaxeItem;
 import net.mcreator.odmsttuf.item.WarhammerOfZillyhooItem;
 import net.mcreator.odmsttuf.item.SteampunkGlassesItem;
 import net.mcreator.odmsttuf.item.CursedArtifactItem;
@@ -22,6 +23,7 @@ public class OdmsttufModItems {
 	public static final RegistryObject<Item> CURSED_ARTIFACT = REGISTRY.register("cursed_artifact", () -> new CursedArtifactItem());
 	public static final RegistryObject<Item> STEAMPUNK_GLASSES = REGISTRY.register("steampunk_glasses", () -> new SteampunkGlassesItem());
 	public static final RegistryObject<Item> A_HELMET = REGISTRY.register("a_helmet", () -> new AItem.Helmet());
+	public static final RegistryObject<Item> WATER_PICKAXE = REGISTRY.register("water_pickaxe", () -> new WaterPickaxeItem());
 	// Start of user code block custom items
 	// End of user code block custom items
 }
