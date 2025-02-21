@@ -445,19 +445,6 @@
         ]
       },
       "path": "~/luis/WaterPickaxe"
-    },
-    {
-      "name": "I",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "i",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/odmsttuf/item/IItem.java",
-          "src/main/resources/assets/odmsttuf/models/item/i.json"
-        ]
-      }
     }
   ],
   "variable_elements": [
@@ -487,7 +474,6 @@
       "item.odmsttuf.a_helmet": "Water Helmet",
       "item.odmsttuf.cursed_artifact": "Cursed Artifact",
       "death.attack.godtierdamage": "%1$s WAS KILLED BY THE GOD OF THE AIR",
-      "item.odmsttuf.i": "I",
       "death.attack.godtierdamage.player": "%1$s WAS KILLED BY THE GOD OF THE AIR",
       "item.odmsttuf.water_pickaxe": "Water Pickaxe",
       "item.odmsttuf.steampunk_glasses": "Steampunk Glasses",
