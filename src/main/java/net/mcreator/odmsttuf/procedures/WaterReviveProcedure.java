@@ -42,7 +42,9 @@ public class WaterReviveProcedure {
 					event.setResult(Event.Result.DENY);
 				}
 				if (world instanceof ServerLevel _level)
-					_level.sendParticles(ParticleTypes.SPLASH, x, y, z, 25, 0, 0, 0, 1);
+					_level.sendParticles(ParticleTypes.SPLASH, x, y, (z + 1), 55, 0, 0, 0, 1);
+				if (world instanceof ServerLevel _level)
+					_level.sendParticles(ParticleTypes.TOTEM_OF_UNDYING, x, y, (z + 1), 15, 0, 0, 0, 1);
 				OdmsttufModVariables.MapVariables.get(world).WaterReviveCount = OdmsttufModVariables.MapVariables.get(world).WaterReviveCount - 1;
 				OdmsttufModVariables.MapVariables.get(world).syncData(world);
 				if (entity instanceof LivingEntity _entity)
