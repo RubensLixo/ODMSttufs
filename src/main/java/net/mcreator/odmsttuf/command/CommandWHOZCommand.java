@@ -15,13 +15,13 @@ import net.minecraft.core.Direction;
 import net.minecraft.commands.arguments.EntityArgument;
 import net.minecraft.commands.Commands;
 
-import net.mcreator.odmsttuf.procedures.WHOZATIVARProcedure;
+import net.mcreator.odmsttuf.procedures.WHOZAttrbuteblahblahunvariavelProcedure;
 
 @Mod.EventBusSubscriber
 public class CommandWHOZCommand {
 	@SubscribeEvent
 	public static void registerCommand(RegisterCommandsEvent event) {
-		event.getDispatcher().register(Commands.literal("commandwhoz").requires(s -> s.hasPermission(4)).then(Commands.argument("players", EntityArgument.player()).executes(arguments -> {
+		event.getDispatcher().register(Commands.literal("commandwhoz").requires(s -> s.hasPermission(1)).then(Commands.argument("name", EntityArgument.player()).executes(arguments -> {
 			Level world = arguments.getSource().getUnsidedLevel();
 			double x = arguments.getSource().getPosition().x();
 			double y = arguments.getSource().getPosition().y();
@@ -33,7 +33,7 @@ public class CommandWHOZCommand {
 			if (entity != null)
 				direction = entity.getDirection();
 
-			WHOZATIVARProcedure.execute(entity);
+			WHOZAttrbuteblahblahunvariavelProcedure.execute(world, entity);
 			return 0;
 		})));
 	}

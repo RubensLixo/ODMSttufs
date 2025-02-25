@@ -14,6 +14,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -304,6 +308,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -445,6 +453,29 @@
         ]
       },
       "path": "~/luis/WaterPickaxe"
+    },
+    {
+      "name": "WHOZAttrbuteblahblahunvariavel",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "whoz_attrbuteblahblahunvariavel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/odmsttuf/procedures/WHOZAttrbuteblahblahunvariavelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/halk/WHOZA"
     }
   ],
   "variable_elements": [
@@ -453,6 +484,12 @@
       "type": "number",
       "scope": "map",
       "value": "1.0"
+    },
+    {
+      "name": "whozaattributes",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
     }
   ],
   "sound_elements": [],
