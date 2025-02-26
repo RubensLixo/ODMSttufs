@@ -38,7 +38,7 @@ public class WarhammerOfZillyhooItem extends TieredItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 14.5f;
+				return 83.5f;
 			}
 
 			public int getLevel() {
@@ -52,7 +52,7 @@ public class WarhammerOfZillyhooItem extends TieredItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of();
 			}
-		}, new Item.Properties());
+		}, new Item.Properties().fireResistant());
 	}
 
 	@Override
@@ -76,7 +76,7 @@ public class WarhammerOfZillyhooItem extends TieredItem {
 		if (equipmentSlot == EquipmentSlot.MAINHAND) {
 			ImmutableMultimap.Builder<Attribute, AttributeModifier> builder = ImmutableMultimap.builder();
 			builder.putAll(super.getDefaultAttributeModifiers(equipmentSlot));
-			builder.put(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_UUID, "Tool modifier", 15.5f, AttributeModifier.Operation.ADDITION));
+			builder.put(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_UUID, "Tool modifier", 84.5f, AttributeModifier.Operation.ADDITION));
 			builder.put(Attributes.ATTACK_SPEED, new AttributeModifier(BASE_ATTACK_SPEED_UUID, "Tool modifier", -2.2, AttributeModifier.Operation.ADDITION));
 			return builder.build();
 		}
