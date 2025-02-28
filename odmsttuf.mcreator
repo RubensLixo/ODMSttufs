@@ -499,6 +499,10 @@
           {
             "name": "SteampunkGlasses",
             "children": []
+          },
+          {
+            "name": "MecanismShooter",
+            "children": []
           }
         ]
       },
