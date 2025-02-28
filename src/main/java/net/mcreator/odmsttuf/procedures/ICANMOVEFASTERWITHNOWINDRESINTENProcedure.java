@@ -14,7 +14,7 @@ public class ICANMOVEFASTERWITHNOWINDRESINTENProcedure {
 	public static void execute(LevelAccessor world, CommandContext<CommandSourceStack> arguments, Entity entity) {
 		if (entity == null)
 			return;
-		if (OdmsttufModVariables.MapVariables.get(world).WaterReviveCount == 1) {
+		if (OdmsttufModVariables.MapVariables.get(world).whozaattributes == 1) {
 			((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED).setBaseValue((DoubleArgumentType.getDouble(arguments, "velocidade")));
 		}
 	}

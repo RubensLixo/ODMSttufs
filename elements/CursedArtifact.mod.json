@@ -3,11 +3,11 @@
   "_type": "curiosbauble",
   "definition": {
     "renderType": 0,
-    "texture": "cursed_artifact",
+    "texture": "human_heart",
     "customModelName": "Normal",
     "name": "Cursed Artifact",
     "rarity": "EPIC",
-    "slotType": "NECKLACE",
+    "slotType": "Heart",
     "baubleModel": "Default",
     "baubleModelTexture": "",
     "creativeTab": {
@@ -40,12 +40,6 @@
     "slotAmount": 1,
     "curioTick": {
       "name": "CursedArtifactWhileBaubleIsEquippedTick"
-    },
-    "onEquip": {
-      "name": "CursedArtifactBaubleIsEquipped"
-    },
-    "onUnequip": {
-      "name": "CursedArtifactBaubleIsUnequipped"
     },
     "isFood": false,
     "friendlyPigs": false,

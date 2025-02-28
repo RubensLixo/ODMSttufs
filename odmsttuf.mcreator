@@ -110,48 +110,6 @@
       "path": "~/halk/WHOZA"
     },
     {
-      "name": "CursedArtifactBaubleIsEquipped",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cursed_artifact_bauble_is_equipped",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/odmsttuf/procedures/CursedArtifactBaubleIsEquippedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/thur/CursedArtifact"
-    },
-    {
-      "name": "CursedArtifactWhileBaubleIsEquippedTick",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cursed_artifact_while_bauble_is_equipped_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/odmsttuf/procedures/CursedArtifactWhileBaubleIsEquippedTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/thur/CursedArtifact"
-    },
-    {
       "name": "CursedArtifact",
       "type": "curiosbauble",
       "compiles": true,
@@ -221,25 +179,6 @@
         ]
       },
       "path": "~/builder/SteampunkGlasses"
-    },
-    {
-      "name": "CursedArtifactBaubleIsUnequipped",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cursed_artifact_bauble_is_unequipped",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/odmsttuf/procedures/CursedArtifactBaubleIsUnequippedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/thur/CursedArtifact"
     },
     {
       "name": "AvilSpecialist",
@@ -320,90 +259,6 @@
         ]
       },
       "path": "~/halk/WHOZA"
-    },
-    {
-      "name": "A",
-      "type": "armor",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "a",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/odmsttuf/item/AItem.java",
-          "src/main/resources/assets/odmsttuf/models/item/a_helmet.json"
-        ]
-      },
-      "path": "~/luis/Water Helmet"
-    },
-    {
-      "name": "AHelmetTickEvent",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "a_helmet_tick_event",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/odmsttuf/procedures/AHelmetTickEventProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/luis/Water Helmet"
-    },
-    {
-      "name": "WaterRevive",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "water_revive",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/odmsttuf/procedures/WaterReviveProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/luis/Water Helmet"
     },
     {
       "name": "WaterPickaxe",
@@ -644,26 +499,39 @@
       "path": "~/thur/CursedArtifact"
     },
     {
-      "name": "Glubglub",
-      "type": "achievement",
+      "name": "Heart",
+      "type": "curiosslot",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "glubglub",
+      "registry_name": "heart",
       "metadata": {
         "files": [
-          "src/main/resources/data/odmsttuf/advancements/glubglub.json"
+          "src/main/resources/data/curios/tags/items/heart.json"
         ]
       },
-      "path": "~/luis/Water Helmet"
+      "path": "~/thur/CursedArtifact"
+    },
+    {
+      "name": "CursedArtifactWhileBaubleIsEquippedTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cursed_artifact_while_bauble_is_equipped_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/odmsttuf/procedures/CursedArtifactWhileBaubleIsEquippedTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/thur/CursedArtifact"
     }
   ],
   "variable_elements": [
-    {
-      "name": "WaterReviveCount",
-      "type": "number",
-      "scope": "map",
-      "value": "1.0"
-    },
     {
       "name": "whozaattributes",
       "type": "number",
@@ -675,6 +543,12 @@
       "type": "number",
       "scope": "map",
       "value": "0.0"
+    },
+    {
+      "name": "ImortalidadeCondenada",
+      "type": "number",
+      "scope": "map",
+      "value": "9.0"
     }
   ],
   "sound_elements": [],
@@ -696,16 +570,14 @@
       "death.attack.godtierdamage": "%1$s WAS KILLED BY THE GOD OF THE AIR",
       "death.attack.godtierdamage.player": "%1$s WAS KILLED BY THE GOD OF THE AIR",
       "item.odmsttuf.water_pickaxe": "Water Pickaxe",
-      "advancements.glubglub.descr": "item do luis",
       "advancements.almadisao.descr": "conquista thur",
       "item.odmsttuf.warhammer_of_zillyhoo": "Real Warhammer Of Zillyhoo",
       "item.odmsttuf.adamsstars": "ADAM\u0027S STARS",
       "death.attack.godtierdamage.item": "%1$s WAS KILLED BY THE GOD OF THE AIR (%2$s)",
       "item.odmsttuf.adamarmor_helmet": "Adam\u0027s Helmet",
-      "item.odmsttuf.a_helmet": "Water Helmet",
       "advancements.almadisao.title": "DEUS DA MALDIÇÃO",
       "item.odmsttuf.cursed_artifact": "Cursed Artifact",
-      "advancements.glubglub.title": "estou me afogando socorro",
+      "curios.identifier.heart": "Heart",
       "item.odmsttuf.steampunk_glasses": "Steampunk Glasses"
     }
   },
@@ -742,10 +614,6 @@
       {
         "name": "luis",
         "children": [
-          {
-            "name": "Water Helmet",
-            "children": []
-          },
           {
             "name": "WaterPickaxe",
             "children": []
