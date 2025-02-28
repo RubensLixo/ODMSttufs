@@ -14,7 +14,9 @@ import net.mcreator.odmsttuf.item.WaterPickaxeItem;
 import net.mcreator.odmsttuf.item.WarhammerOfZillyhooItem;
 import net.mcreator.odmsttuf.item.SteampunkGlassesItem;
 import net.mcreator.odmsttuf.item.CursedArtifactItem;
+import net.mcreator.odmsttuf.item.AdamarmorItem;
 import net.mcreator.odmsttuf.item.AItem;
+import net.mcreator.odmsttuf.item.ADAMSSTARSItem;
 import net.mcreator.odmsttuf.OdmsttufMod;
 
 public class OdmsttufModItems {
@@ -24,6 +26,8 @@ public class OdmsttufModItems {
 	public static final RegistryObject<Item> STEAMPUNK_GLASSES = REGISTRY.register("steampunk_glasses", () -> new SteampunkGlassesItem());
 	public static final RegistryObject<Item> A_HELMET = REGISTRY.register("a_helmet", () -> new AItem.Helmet());
 	public static final RegistryObject<Item> WATER_PICKAXE = REGISTRY.register("water_pickaxe", () -> new WaterPickaxeItem());
+	public static final RegistryObject<Item> ADAMARMOR_HELMET = REGISTRY.register("adamarmor_helmet", () -> new AdamarmorItem.Helmet());
+	public static final RegistryObject<Item> ADAMSSTARS = REGISTRY.register("adamsstars", () -> new ADAMSSTARSItem());
 	// Start of user code block custom items
 	// End of user code block custom items
 }

@@ -9,6 +9,6 @@ public class CursedArtifactBaubleIsUnequippedProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH).removePermanentModifier(UUID.fromString("5ea76175-0d4d-476e-b003-4e348686fe11"));
+		((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE).removePermanentModifier(UUID.fromString("e22566aa-5aed-4ade-a95a-d79ee9c3911d"));
 	}
 }

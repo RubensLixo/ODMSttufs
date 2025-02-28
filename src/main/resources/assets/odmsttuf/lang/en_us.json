@@ -1,10 +1,16 @@
 {
-  "item.odmsttuf.a_helmet": "Water Helmet",
-  "item.odmsttuf.cursed_artifact": "Cursed Artifact",
   "death.attack.godtierdamage": "%1$s WAS KILLED BY THE GOD OF THE AIR",
   "death.attack.godtierdamage.player": "%1$s WAS KILLED BY THE GOD OF THE AIR",
   "item.odmsttuf.water_pickaxe": "Water Pickaxe",
-  "item.odmsttuf.steampunk_glasses": "Steampunk Glasses",
+  "advancements.glubglub.descr": "item do luis",
+  "advancements.almadisao.descr": "conquista thur",
   "item.odmsttuf.warhammer_of_zillyhoo": "Real Warhammer Of Zillyhoo",
-  "death.attack.godtierdamage.item": "%1$s WAS KILLED BY THE GOD OF THE AIR (%2$s)"
+  "item.odmsttuf.adamsstars": "ADAM\u0027S STARS",
+  "death.attack.godtierdamage.item": "%1$s WAS KILLED BY THE GOD OF THE AIR (%2$s)",
+  "item.odmsttuf.adamarmor_helmet": "Adam\u0027s Helmet",
+  "item.odmsttuf.a_helmet": "Water Helmet",
+  "advancements.almadisao.title": "DEUS DA MALDIÇÃO",
+  "item.odmsttuf.cursed_artifact": "Cursed Artifact",
+  "advancements.glubglub.title": "estou me afogando socorro",
+  "item.odmsttuf.steampunk_glasses": "Steampunk Glasses"
 }

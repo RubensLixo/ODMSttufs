@@ -9,6 +9,7 @@ import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 
+import net.mcreator.odmsttuf.procedures.CursedArtifactWhileBaubleIsEquippedTickProcedure;
 import net.mcreator.odmsttuf.procedures.CursedArtifactBaubleIsUnequippedProcedure;
 import net.mcreator.odmsttuf.procedures.CursedArtifactBaubleIsEquippedProcedure;
 
@@ -20,6 +21,11 @@ public class CursedArtifactItem extends Item implements ICurioItem {
 	@Override
 	public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
 		return 0F;
+	}
+
+	@Override
+	public void curioTick(SlotContext slotContext, ItemStack stack) {
+		CursedArtifactWhileBaubleIsEquippedTickProcedure.execute(slotContext.entity().level(), slotContext.entity());
 	}
 
 	@Override

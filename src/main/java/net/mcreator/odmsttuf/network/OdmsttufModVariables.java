@@ -89,6 +89,7 @@ public class OdmsttufModVariables {
 		public static final String DATA_NAME = "odmsttuf_mapvars";
 		public double WaterReviveCount = 1.0;
 		public double whozaattributes = 0;
+		public double adamrevives = 0.0;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -99,12 +100,14 @@ public class OdmsttufModVariables {
 		public void read(CompoundTag nbt) {
 			WaterReviveCount = nbt.getDouble("WaterReviveCount");
 			whozaattributes = nbt.getDouble("whozaattributes");
+			adamrevives = nbt.getDouble("adamrevives");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
 			nbt.putDouble("WaterReviveCount", WaterReviveCount);
 			nbt.putDouble("whozaattributes", whozaattributes);
+			nbt.putDouble("adamrevives", adamrevives);
 			return nbt;
 		}
 
