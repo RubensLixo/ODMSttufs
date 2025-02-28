@@ -1,0 +1,28 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "Items.NETHER_STAR"
+    },
+    "smithingInputAdditionStack": {
+      "value": "Items.NETHERITE_INGOT"
+    },
+    "smithingInputTemplateStack": {
+      "value": "Items.GOLDEN_APPLE#1"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:ADAMSSTARS"
+    },
+    "name": "adam_starsrecipe",
+    "namespace": "mod"
+  }
+}

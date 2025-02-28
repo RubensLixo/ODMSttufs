@@ -14,6 +14,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -70,6 +74,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -102,48 +110,6 @@
       "path": "~/halk/WHOZA"
     },
     {
-      "name": "CursedArtifactBaubleIsEquipped",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cursed_artifact_bauble_is_equipped",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/odmsttuf/procedures/CursedArtifactBaubleIsEquippedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/thur/CursedArtifact"
-    },
-    {
-      "name": "CursedArtifactWhileBaubleIsEquippedTick",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cursed_artifact_while_bauble_is_equipped_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/odmsttuf/procedures/CursedArtifactWhileBaubleIsEquippedTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/thur/CursedArtifact"
-    },
-    {
       "name": "CursedArtifact",
       "type": "curiosbauble",
       "compiles": true,
@@ -151,8 +117,8 @@
       "registry_name": "cursed_artifact",
       "metadata": {
         "files": [
-          "src/main/resources/assets/odmsttuf/models/item/cursed_artifact.json",
-          "src/main/java/net/mcreator/odmsttuf/item/CursedArtifactItem.java"
+          "src/main/java/net/mcreator/odmsttuf/item/CursedArtifactItem.java",
+          "src/main/resources/assets/odmsttuf/models/item/cursed_artifact.json"
         ]
       },
       "path": "~/thur/CursedArtifact"
@@ -215,25 +181,6 @@
       "path": "~/builder/SteampunkGlasses"
     },
     {
-      "name": "CursedArtifactBaubleIsUnequipped",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cursed_artifact_bauble_is_unequipped",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/odmsttuf/procedures/CursedArtifactBaubleIsUnequippedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/thur/CursedArtifact"
-    },
-    {
       "name": "AvilSpecialist",
       "type": "procedure",
       "compiles": true,
@@ -279,8 +226,8 @@
       "registry_name": "steampunk_glasses",
       "metadata": {
         "files": [
-          "src/main/resources/assets/odmsttuf/models/item/steampunk_glasses.json",
           "src/main/java/net/mcreator/odmsttuf/item/SteampunkGlassesItem.java",
+          "src/main/resources/assets/odmsttuf/models/item/steampunk_glasses.json",
           "src/main/java/net/mcreator/odmsttuf/client/renderer/SteampunkGlassesRenderer.java"
         ]
       },
@@ -304,94 +251,14 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
       "path": "~/halk/WHOZA"
-    },
-    {
-      "name": "A",
-      "type": "armor",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "a",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/odmsttuf/item/AItem.java",
-          "src/main/resources/assets/odmsttuf/models/item/a_helmet.json"
-        ]
-      },
-      "path": "~/luis/Water Helmet"
-    },
-    {
-      "name": "AHelmetTickEvent",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "a_helmet_tick_event",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/odmsttuf/procedures/AHelmetTickEventProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/luis/Water Helmet"
-    },
-    {
-      "name": "WaterRevive",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "water_revive",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/odmsttuf/procedures/WaterReviveProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/luis/Water Helmet"
     },
     {
       "name": "WaterPickaxe",
@@ -445,14 +312,243 @@
         ]
       },
       "path": "~/luis/WaterPickaxe"
+    },
+    {
+      "name": "WHOZAttrbuteblahblahunvariavel",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "whoz_attrbuteblahblahunvariavel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/odmsttuf/procedures/WHOZAttrbuteblahblahunvariavelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/halk/WHOZA"
+    },
+    {
+      "name": "ICANMOVEFASTERWITHNOWINDRESINTEN",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "icanmovefasterwithnowindresinten",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/odmsttuf/procedures/ICANMOVEFASTERWITHNOWINDRESINTENProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/halk/WHOZA"
+    },
+    {
+      "name": "Adamarmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adamarmor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/odmsttuf/item/AdamarmorItem.java",
+          "src/main/resources/assets/odmsttuf/models/item/adamarmor_helmet.json"
+        ]
+      },
+      "path": "~/dark"
+    },
+    {
+      "name": "ADAMSSTARS",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adamsstars",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/odmsttuf/models/item/adamsstars.json",
+          "src/main/java/net/mcreator/odmsttuf/item/ADAMSSTARSItem.java"
+        ]
+      },
+      "path": "~/dark"
+    },
+    {
+      "name": "AdamStarsrecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adam_starsrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/odmsttuf/recipes/adam_starsrecipe.json"
+        ]
+      },
+      "path": "~/dark"
+    },
+    {
+      "name": "Useadamstar",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "useadamstar",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/odmsttuf/procedures/UseadamstarProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/dark"
+    },
+    {
+      "name": "Reviveofadam",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reviveofadam",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/odmsttuf/procedures/ReviveofadamProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/dark"
+    },
+    {
+      "name": "AdamarmorHelmetTickEvent",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adamarmor_helmet_tick_event",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/odmsttuf/procedures/AdamarmorHelmetTickEventProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/dark"
+    },
+    {
+      "name": "Almadisao",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "almadisao",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/odmsttuf/advancements/almadisao.json"
+        ]
+      },
+      "path": "~/thur/CursedArtifact"
+    },
+    {
+      "name": "Heart",
+      "type": "curiosslot",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heart",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/curios/tags/items/heart.json"
+        ]
+      },
+      "path": "~/thur/CursedArtifact"
+    },
+    {
+      "name": "CursedArtifactWhileBaubleIsEquippedTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cursed_artifact_while_bauble_is_equipped_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/odmsttuf/procedures/CursedArtifactWhileBaubleIsEquippedTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/thur/CursedArtifact"
     }
   ],
   "variable_elements": [
     {
-      "name": "WaterReviveCount",
+      "name": "whozaattributes",
       "type": "number",
       "scope": "map",
-      "value": "1.0"
+      "value": "0"
+    },
+    {
+      "name": "adamrevives",
+      "type": "number",
+      "scope": "map",
+      "value": "0.0"
+    },
+    {
+      "name": "ImortalidadeCondenada",
+      "type": "number",
+      "scope": "map",
+      "value": "9.0"
     }
   ],
   "sound_elements": [],
@@ -471,14 +567,18 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "item.odmsttuf.a_helmet": "Water Helmet",
-      "item.odmsttuf.cursed_artifact": "Cursed Artifact",
       "death.attack.godtierdamage": "%1$s WAS KILLED BY THE GOD OF THE AIR",
       "death.attack.godtierdamage.player": "%1$s WAS KILLED BY THE GOD OF THE AIR",
       "item.odmsttuf.water_pickaxe": "Water Pickaxe",
-      "item.odmsttuf.steampunk_glasses": "Steampunk Glasses",
-      "item.odmsttuf.warhammer_of_zillyhoo": "Warhammer Of Zillyhoo",
-      "death.attack.godtierdamage.item": "%1$s WAS KILLED BY THE GOD OF THE AIR (%2$s)"
+      "advancements.almadisao.descr": "conquista thur",
+      "item.odmsttuf.warhammer_of_zillyhoo": "Real Warhammer Of Zillyhoo",
+      "item.odmsttuf.adamsstars": "ADAM\u0027S STARS",
+      "death.attack.godtierdamage.item": "%1$s WAS KILLED BY THE GOD OF THE AIR (%2$s)",
+      "item.odmsttuf.adamarmor_helmet": "Adam\u0027s Helmet",
+      "advancements.almadisao.title": "DEUS DA MALDIÇÃO",
+      "item.odmsttuf.cursed_artifact": "Cursed Artifact",
+      "curios.identifier.heart": "Heart",
+      "item.odmsttuf.steampunk_glasses": "Steampunk Glasses"
     }
   },
   "foldersRoot": {
@@ -519,14 +619,14 @@
         "name": "luis",
         "children": [
           {
-            "name": "Water Helmet",
-            "children": []
-          },
-          {
             "name": "WaterPickaxe",
             "children": []
           }
         ]
+      },
+      {
+        "name": "dark",
+        "children": []
       }
     ]
   },

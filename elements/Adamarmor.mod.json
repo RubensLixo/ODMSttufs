@@ -3,26 +3,26 @@
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
-    "textureHelmet": "waterhelmetitem",
+    "textureHelmet": "adam_helmet",
     "enableBody": false,
-    "textureBody": "",
+    "textureBody": "adam_body",
     "enableLeggings": false,
-    "textureLeggings": "",
+    "textureLeggings": "adam_leggings",
     "enableBoots": false,
-    "textureBoots": "",
+    "textureBoots": "adam_boots",
     "onHelmetTick": {
-      "name": "AHelmetTickEvent"
+      "name": "AdamarmorHelmetTickEvent"
     },
     "creativeTabs": [
       {
         "value": "COMBAT"
       }
     ],
-    "armorTextureFile": "waterarmor",
-    "helmetName": "Water Helmet",
-    "bodyName": "A Chestplate",
-    "leggingsName": "A Leggings",
-    "bootsName": "A Boots",
+    "armorTextureFile": "adam",
+    "helmetName": "Adam's Helmet",
+    "bodyName": "Adam's  Chestplate",
+    "leggingsName": "Adam's Leggings",
+    "bootsName": "Adam's Boots",
     "helmetSpecialInformation": {
       "fixedValue": []
     },
@@ -88,15 +88,15 @@
       "fixedValue": false
     },
     "maxDamage": 0,
-    "damageValueHelmet": 10,
-    "damageValueBody": 0,
-    "damageValueLeggings": 0,
-    "damageValueBoots": 0,
-    "enchantability": 0,
-    "toughness": 0.0,
-    "knockbackResistance": 0.01,
+    "damageValueHelmet": 24,
+    "damageValueBody": 1,
+    "damageValueLeggings": 1,
+    "damageValueBoots": 1,
+    "enchantability": 42,
+    "toughness": 5.0,
+    "knockbackResistance": 5.0,
     "equipSound": {
-      "value": "item.armor.equip_chain"
+      "value": "ambient.cave"
     },
     "repairItems": []
   }

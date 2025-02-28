@@ -15,26 +15,29 @@ import net.minecraft.core.Direction;
 import net.minecraft.commands.arguments.EntityArgument;
 import net.minecraft.commands.Commands;
 
-import net.mcreator.odmsttuf.procedures.WHOZATIVARProcedure;
+import net.mcreator.odmsttuf.procedures.ICANMOVEFASTERWITHNOWINDRESINTENProcedure;
+
+import com.mojang.brigadier.arguments.DoubleArgumentType;
 
 @Mod.EventBusSubscriber
 public class CommandWHOZCommand {
 	@SubscribeEvent
 	public static void registerCommand(RegisterCommandsEvent event) {
-		event.getDispatcher().register(Commands.literal("commandwhoz").requires(s -> s.hasPermission(4)).then(Commands.argument("players", EntityArgument.player()).executes(arguments -> {
-			Level world = arguments.getSource().getUnsidedLevel();
-			double x = arguments.getSource().getPosition().x();
-			double y = arguments.getSource().getPosition().y();
-			double z = arguments.getSource().getPosition().z();
-			Entity entity = arguments.getSource().getEntity();
-			if (entity == null && world instanceof ServerLevel _servLevel)
-				entity = FakePlayerFactory.getMinecraft(_servLevel);
-			Direction direction = Direction.DOWN;
-			if (entity != null)
-				direction = entity.getDirection();
+		event.getDispatcher()
+				.register(Commands.literal("rwhozicmfwnwr").requires(s -> s.hasPermission(1)).then(Commands.argument("name", EntityArgument.player()).then(Commands.argument("velocidade", DoubleArgumentType.doubleArg(0, 264)).executes(arguments -> {
+					Level world = arguments.getSource().getUnsidedLevel();
+					double x = arguments.getSource().getPosition().x();
+					double y = arguments.getSource().getPosition().y();
+					double z = arguments.getSource().getPosition().z();
+					Entity entity = arguments.getSource().getEntity();
+					if (entity == null && world instanceof ServerLevel _servLevel)
+						entity = FakePlayerFactory.getMinecraft(_servLevel);
+					Direction direction = Direction.DOWN;
+					if (entity != null)
+						direction = entity.getDirection();
 
-			WHOZATIVARProcedure.execute(entity);
-			return 0;
-		})));
+					ICANMOVEFASTERWITHNOWINDRESINTENProcedure.execute(world, arguments, entity);
+					return 0;
+				}))));
 	}
 }

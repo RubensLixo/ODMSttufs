@@ -8,7 +8,7 @@
     "texture": "zillyhoo_hammer",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
-    "name": "Warhammer Of Zillyhoo",
+    "name": "Real Warhammer Of Zillyhoo",
     "specialInformation": {
       "fixedValue": []
     },
@@ -16,13 +16,13 @@
     "efficiency": 12.0,
     "attackSpeed": 1.8,
     "enchantability": 20,
-    "damageVsEntity": 16.5,
+    "damageVsEntity": 85.5,
     "usageCount": 0,
     "glowCondition": {
       "fixedValue": false
     },
     "repairItems": [],
-    "immuneToFire": false,
+    "immuneToFire": true,
     "blockDropsTier": "NETHERITE",
     "blocksAffected": [],
     "stayInGridWhenCrafting": false,

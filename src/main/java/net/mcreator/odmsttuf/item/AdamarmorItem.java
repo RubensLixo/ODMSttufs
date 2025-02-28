@@ -15,12 +15,12 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 
-import net.mcreator.odmsttuf.procedures.AHelmetTickEventProcedure;
+import net.mcreator.odmsttuf.procedures.AdamarmorHelmetTickEventProcedure;
 
 import com.google.common.collect.Iterables;
 
-public abstract class AItem extends ArmorItem {
-	public AItem(ArmorItem.Type type, Item.Properties properties) {
+public abstract class AdamarmorItem extends ArmorItem {
+	public AdamarmorItem(ArmorItem.Type type, Item.Properties properties) {
 		super(new ArmorMaterial() {
 			@Override
 			public int getDurabilityForType(ArmorItem.Type type) {
@@ -29,17 +29,17 @@ public abstract class AItem extends ArmorItem {
 
 			@Override
 			public int getDefenseForType(ArmorItem.Type type) {
-				return new int[]{0, 0, 0, 10}[type.getSlot().getIndex()];
+				return new int[]{1, 1, 1, 24}[type.getSlot().getIndex()];
 			}
 
 			@Override
 			public int getEnchantmentValue() {
-				return 0;
+				return 42;
 			}
 
 			@Override
 			public SoundEvent getEquipSound() {
-				return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.armor.equip_chain"));
+				return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ambient.cave"));
 			}
 
 			@Override
@@ -49,36 +49,36 @@ public abstract class AItem extends ArmorItem {
 
 			@Override
 			public String getName() {
-				return "a";
+				return "adamarmor";
 			}
 
 			@Override
 			public float getToughness() {
-				return 0f;
+				return 5f;
 			}
 
 			@Override
 			public float getKnockbackResistance() {
-				return 0.01f;
+				return 5f;
 			}
 		}, type, properties);
 	}
 
-	public static class Helmet extends AItem {
+	public static class Helmet extends AdamarmorItem {
 		public Helmet() {
 			super(ArmorItem.Type.HELMET, new Item.Properties());
 		}
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "odmsttuf:textures/models/armor/waterarmor_layer_1.png";
+			return "odmsttuf:textures/models/armor/adam_layer_1.png";
 		}
 
 		@Override
 		public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 			super.inventoryTick(itemstack, world, entity, slot, selected);
 			if (entity instanceof Player player && Iterables.contains(player.getArmorSlots(), itemstack)) {
-				AHelmetTickEventProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity);
+				AdamarmorHelmetTickEventProcedure.execute(entity);
 			}
 		}
 	}

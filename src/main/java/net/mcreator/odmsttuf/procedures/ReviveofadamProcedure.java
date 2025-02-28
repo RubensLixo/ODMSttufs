@@ -19,7 +19,7 @@ import net.mcreator.odmsttuf.init.OdmsttufModItems;
 import javax.annotation.Nullable;
 
 @Mod.EventBusSubscriber
-public class WaterReviveProcedure {
+public class ReviveofadamProcedure {
 	@SubscribeEvent
 	public static void onEntityDeath(LivingDeathEvent event) {
 		if (event != null && event.getEntity() != null) {
@@ -34,21 +34,19 @@ public class WaterReviveProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == OdmsttufModItems.A_HELMET.get()) {
-			if (OdmsttufModVariables.MapVariables.get(world).WaterReviveCount >= 1) {
+		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == OdmsttufModItems.ADAMARMOR_HELMET.get()) {
+			if (OdmsttufModVariables.MapVariables.get(world).adamrevives >= 1) {
+				if (world instanceof ServerLevel _level)
+					_level.sendParticles(ParticleTypes.FLAME, x, y, (z + 1), 55, 0, 0, 0, 1);
+				OdmsttufModVariables.MapVariables.get(world).adamrevives = OdmsttufModVariables.MapVariables.get(world).adamrevives - 1;
+				OdmsttufModVariables.MapVariables.get(world).syncData(world);
+				if (entity instanceof LivingEntity _entity)
+					_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) / 2));
 				if (event != null && event.isCancelable()) {
 					event.setCanceled(true);
 				} else if (event != null && event.hasResult()) {
 					event.setResult(Event.Result.DENY);
 				}
-				if (world instanceof ServerLevel _level)
-					_level.sendParticles(ParticleTypes.SPLASH, x, y, (z + 1), 55, 0, 0, 0, 1);
-				if (world instanceof ServerLevel _level)
-					_level.sendParticles(ParticleTypes.TOTEM_OF_UNDYING, x, y, (z + 1), 15, 0, 0, 0, 1);
-				OdmsttufModVariables.MapVariables.get(world).WaterReviveCount = OdmsttufModVariables.MapVariables.get(world).WaterReviveCount - 1;
-				OdmsttufModVariables.MapVariables.get(world).syncData(world);
-				if (entity instanceof LivingEntity _entity)
-					_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) / 2));
 			}
 		}
 	}

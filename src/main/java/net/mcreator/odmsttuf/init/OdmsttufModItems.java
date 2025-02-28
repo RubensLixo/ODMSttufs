@@ -14,7 +14,6 @@ import net.mcreator.odmsttuf.item.WaterPickaxeItem;
 import net.mcreator.odmsttuf.item.WarhammerOfZillyhooItem;
 import net.mcreator.odmsttuf.item.SteampunkGlassesItem;
 import net.mcreator.odmsttuf.item.CursedArtifactItem;
-import net.mcreator.odmsttuf.item.AItem;
 import net.mcreator.odmsttuf.OdmsttufMod;
 
 public class OdmsttufModItems {

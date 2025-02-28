@@ -1,51 +1,50 @@
 {
   "_fv": 66,
-  "_type": "curiosbauble",
+  "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "human_heart",
+    "texture": "star",
     "customModelName": "Normal",
-    "name": "Cursed Artifact",
+    "customProperties": {},
+    "states": [],
+    "name": "ADAM'S STARS",
     "rarity": "EPIC",
-    "slotType": "Heart",
-    "baubleModel": "Default",
-    "baubleModelTexture": "",
-    "creativeTab": {
-      "value": "COMBAT"
-    },
-    "stackSize": 1,
+    "creativeTabs": [],
+    "stackSize": 3,
     "enchantability": 0,
     "useDuration": 0,
-    "toolType": 0.0,
+    "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
       "value": ""
     },
     "destroyAnyBlock": false,
-    "immuneToFire": false,
+    "immuneToFire": true,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
-    "addSlot": true,
     "damageVsEntity": 0.0,
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "esse item pode recarregar  energias do adam"
+      ]
     },
-    "hasGlow": false,
-    "customProperties": {},
-    "states": [],
+    "glowCondition": {
+      "fixedValue": true
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "slotAmount": 1,
-    "curioTick": {
-      "name": "CursedArtifactWhileBaubleIsEquippedTick"
+    "onRightClickedInAir": {
+      "name": "Useadamstar"
+    },
+    "enableRanged": false,
+    "shootConstantly": false,
+    "rangedItemChargesPower": false,
+    "projectile": {
+      "value": "Arrow"
     },
     "isFood": false,
-    "friendlyPigs": false,
-    "enderMask": false,
-    "rotateModel": false,
-    "translateModel": false,
     "nutritionalValue": 4,
     "saturation": 0.3,
     "eatResultItem": {
@@ -53,7 +52,6 @@
     },
     "isMeat": false,
     "isAlwaysEdible": false,
-    "hasModel": false,
     "animation": "none"
   }
 }
