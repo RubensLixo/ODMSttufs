@@ -1,9 +1,0 @@
-{
-  "_fv": 66,
-  "_type": "command",
-  "definition": {
-    "commandName": "comebackforlife",
-    "type": "STANDARD",
-    "permissionLevel": "No requirement"
-  }
-}

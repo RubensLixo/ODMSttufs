@@ -87,10 +87,10 @@ public class OdmsttufModVariables {
 
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "odmsttuf_mapvars";
-		public double whozaattributes = 0;
+		public double whozaattributes = 0.0;
 		public double adamrevives = 0.0;
-		public double ImortalidadeCondenada = 9.0;
-		public double fasttime = 0;
+		public double ImortalidadeCondenada = 0.0;
+		public double fasttime = 0.0;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();

@@ -29,6 +29,6 @@ public class CursedArtifactItem extends Item implements ICurioItem {
 
 	@Override
 	public void onEquip(SlotContext slotContext, ItemStack prevStack, ItemStack stack) {
-		CursedArtifactBaubleIsEquippedProcedure.execute(stack);
+		CursedArtifactBaubleIsEquippedProcedure.execute(slotContext.entity().level(), stack);
 	}
 }
