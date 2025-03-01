@@ -10,6 +10,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
+import net.minecraft.commands.arguments.EntityArgument;
 import net.minecraft.commands.Commands;
 
 import net.mcreator.odmsttuf.procedures.ComebackofheartProcedure;
@@ -20,7 +21,7 @@ public class ComebackforlifeCommand {
 	public static void registerCommand(RegisterCommandsEvent event) {
 		event.getDispatcher().register(Commands.literal("comebackforlife")
 
-				.executes(arguments -> {
+				.then(Commands.argument("name", EntityArgument.player()).executes(arguments -> {
 					Level world = arguments.getSource().getUnsidedLevel();
 					double x = arguments.getSource().getPosition().x();
 					double y = arguments.getSource().getPosition().y();
@@ -34,6 +35,6 @@ public class ComebackforlifeCommand {
 
 					ComebackofheartProcedure.execute(world, entity);
 					return 0;
-				}));
+				})));
 	}
 }

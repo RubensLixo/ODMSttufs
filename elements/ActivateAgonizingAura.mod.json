@@ -1,0 +1,12 @@
+{
+  "_fv": 66,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "Y",
+    "keyBindingName": "Activate Agonizing Aura",
+    "keyBindingCategoryKey": "odmkeys",
+    "onKeyPressed": {
+      "name": "Butaopraativar"
+    }
+  }
+}

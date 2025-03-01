@@ -708,6 +708,65 @@
         ]
       },
       "path": "~/thur/CursedArtifact"
+    },
+    {
+      "name": "Butaopraativar",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "butaopraativar",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/odmsttuf/procedures/ButaopraativarProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/thur/CursedArtifact"
+    },
+    {
+      "name": "ActivateAgonizingAura",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "activate_agonizing_aura",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/odmsttuf/network/ActivateAgonizingAuraMessage.java"
+        ]
+      },
+      "path": "~/thur/CursedArtifact"
+    },
+    {
+      "name": "Sedededesangue",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sedededesangue",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/odmsttuf/procedures/SedededesangueProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/thur/CursedArtifact"
     }
   ],
   "variable_elements": [
@@ -734,6 +793,18 @@
       "type": "number",
       "scope": "map",
       "value": "0.0"
+    },
+    {
+      "name": "ativadoheart",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "sededesangueheart",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
     }
   ],
   "sound_elements": [],
@@ -766,6 +837,7 @@
       "advancements.almadisao.title": "DEUS DA MALDIÇÃO",
       "item.odmsttuf.cursed_artifact": "Profane Heart",
       "curios.identifier.heart": "Heart",
+      "key.odmsttuf.activate_agonizing_aura": "Activate Agonizing Aura",
       "death.attack.abyssdevours": "abyss devours %1$s",
       "item.odmsttuf.steampunk_glasses": "Steampunk Glasses"
     }
@@ -815,6 +887,10 @@
       },
       {
         "name": "isa",
+        "children": []
+      },
+      {
+        "name": "drake",
         "children": []
       }
     ]
