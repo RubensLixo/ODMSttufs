@@ -2,20 +2,27 @@ package net.mcreator.odmsttuf.procedures;
 
 import top.theillusivec4.curios.api.CuriosApi;
 
+import net.minecraftforge.registries.ForgeRegistries;
+
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.core.BlockPos;
 
 import net.mcreator.odmsttuf.init.OdmsttufModItems;
+import net.mcreator.odmsttuf.OdmsttufMod;
 
 import java.util.List;
 import java.util.Comparator;
@@ -33,10 +40,42 @@ public class CursedArtifactWhileBaubleIsEquippedTickProcedure {
 					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(16 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 					for (Entity entityiterator : _entfound) {
 						if (!(entityiterator.getDisplayName().getString()).equals("Dev")) {
-							entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("odmsttuf:abyssdevours"))), entity), 2);
+							if (!(entity instanceof ItemEntity)) {
+								entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("odmsttuf:abyssdevours"))), entity),
+										2);
+							}
 						}
 					}
 				}
+				OdmsttufMod.queueServerWork(1200, () -> {
+					if (Math.random() < 0.7) {
+						if (world instanceof Level _level) {
+							if (!_level.isClientSide()) {
+								_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.creeper.primed")), SoundSource.NEUTRAL, 1, 1);
+							} else {
+								_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.creeper.primed")), SoundSource.NEUTRAL, 1, 1, false);
+							}
+						}
+					}
+					if (Math.random() > 0.7) {
+						if (world instanceof Level _level) {
+							if (!_level.isClientSide()) {
+								_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.enderman.scream")), SoundSource.NEUTRAL, 1, 1);
+							} else {
+								_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.enderman.scream")), SoundSource.NEUTRAL, 1, 1, false);
+							}
+						}
+					}
+					if (Math.random() == 0.7) {
+						if (world instanceof Level _level) {
+							if (!_level.isClientSide()) {
+								_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.death")), SoundSource.HOSTILE, 90, 1);
+							} else {
+								_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.death")), SoundSource.HOSTILE, 90, 1, false);
+							}
+						}
+					}
+				});
 			}
 		}
 		if (!(entity.getDisplayName().getString()).equals("Dev")) {

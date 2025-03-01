@@ -645,6 +645,53 @@
         ]
       },
       "path": "~/isa"
+    },
+    {
+      "name": "Revivecondnad",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "revivecondnad",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/odmsttuf/procedures/RevivecondnadProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/thur/CursedArtifact"
+    },
+    {
+      "name": "Comebackcursed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "comebackcursed",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/thur/CursedArtifact"
+    },
+    {
+      "name": "ComeBackForLife",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "come_back_for_life",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/odmsttuf/command/ComeBackForLifeCommand.java"
+        ]
+      },
+      "path": "~/thur/CursedArtifact"
     }
   ],
   "variable_elements": [
@@ -701,7 +748,7 @@
       "death.attack.godtierdamage.item": "%1$s WAS KILLED BY THE GOD OF THE AIR (%2$s)",
       "item.odmsttuf.adamarmor_helmet": "Adam\u0027s Helmet",
       "advancements.almadisao.title": "DEUS DA MALDIÇÃO",
-      "item.odmsttuf.cursed_artifact": "Cursed Heart",
+      "item.odmsttuf.cursed_artifact": "Profane Heart",
       "curios.identifier.heart": "Heart",
       "death.attack.abyssdevours": "abyss devours %1$s",
       "item.odmsttuf.steampunk_glasses": "Steampunk Glasses"
