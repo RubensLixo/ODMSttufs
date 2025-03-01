@@ -10,6 +10,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 
 import net.mcreator.odmsttuf.procedures.CursedArtifactWhileBaubleIsEquippedTickProcedure;
+import net.mcreator.odmsttuf.procedures.CursedArtifactBaubleIsEquippedProcedure;
 
 public class CursedArtifactItem extends Item implements ICurioItem {
 	public CursedArtifactItem() {
@@ -23,6 +24,11 @@ public class CursedArtifactItem extends Item implements ICurioItem {
 
 	@Override
 	public void curioTick(SlotContext slotContext, ItemStack stack) {
-		CursedArtifactWhileBaubleIsEquippedTickProcedure.execute(slotContext.entity());
+		CursedArtifactWhileBaubleIsEquippedTickProcedure.execute(slotContext.entity().level(), slotContext.entity().getX(), slotContext.entity().getY(), slotContext.entity().getZ(), slotContext.entity());
+	}
+
+	@Override
+	public void onEquip(SlotContext slotContext, ItemStack prevStack, ItemStack stack) {
+		CursedArtifactBaubleIsEquippedProcedure.execute(stack);
 	}
 }

@@ -525,10 +525,126 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
       "path": "~/thur/CursedArtifact"
+    },
+    {
+      "name": "Abyssdevours",
+      "type": "damagetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "abyssdevours",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/odmsttuf/damage_type/abyssdevours.json"
+        ]
+      },
+      "path": "~/thur/CursedArtifact"
+    },
+    {
+      "name": "CursedArtifactBaubleIsEquipped",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cursed_artifact_bauble_is_equipped",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/odmsttuf/procedures/CursedArtifactBaubleIsEquippedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/thur/CursedArtifact"
+    },
+    {
+      "name": "TimeTravelClockRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_travel_clock_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/odmsttuf/procedures/TimeTravelClockRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/isa"
+    },
+    {
+      "name": "TimeTravelClockItemInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_travel_clock_item_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/odmsttuf/procedures/TimeTravelClockItemInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/isa"
+    },
+    {
+      "name": "TimeTravelClock",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_travel_clock",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/odmsttuf/models/item/time_travel_clock.json",
+          "src/main/java/net/mcreator/odmsttuf/item/TimeTravelClockItem.java"
+        ]
+      },
+      "path": "~/isa"
     }
   ],
   "variable_elements": [
@@ -549,6 +665,12 @@
       "type": "number",
       "scope": "map",
       "value": "9.0"
+    },
+    {
+      "name": "fasttime",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
     }
   ],
   "sound_elements": [],
@@ -567,17 +689,21 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
+      "death.attack.abyssdevours.item": "abyss devours %1$s",
       "death.attack.godtierdamage": "%1$s WAS KILLED BY THE GOD OF THE AIR",
       "death.attack.godtierdamage.player": "%1$s WAS KILLED BY THE GOD OF THE AIR",
+      "death.attack.abyssdevours.player": "%1$s died whilst trying to escape of te abyss",
       "item.odmsttuf.water_pickaxe": "Water Pickaxe",
       "advancements.almadisao.descr": "conquista thur",
       "item.odmsttuf.warhammer_of_zillyhoo": "Real Warhammer Of Zillyhoo",
       "item.odmsttuf.adamsstars": "ADAM\u0027S STARS",
+      "item.odmsttuf.time_travel_clock": "Time Travel Clock",
       "death.attack.godtierdamage.item": "%1$s WAS KILLED BY THE GOD OF THE AIR (%2$s)",
       "item.odmsttuf.adamarmor_helmet": "Adam\u0027s Helmet",
       "advancements.almadisao.title": "DEUS DA MALDIÇÃO",
-      "item.odmsttuf.cursed_artifact": "Cursed Artifact",
+      "item.odmsttuf.cursed_artifact": "Cursed Heart",
       "curios.identifier.heart": "Heart",
+      "death.attack.abyssdevours": "abyss devours %1$s",
       "item.odmsttuf.steampunk_glasses": "Steampunk Glasses"
     }
   },
@@ -622,6 +748,10 @@
       },
       {
         "name": "dark",
+        "children": []
+      },
+      {
+        "name": "isa",
         "children": []
       }
     ]

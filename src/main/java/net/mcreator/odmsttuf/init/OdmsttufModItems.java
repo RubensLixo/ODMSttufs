@@ -12,6 +12,7 @@ import net.minecraft.world.item.Item;
 
 import net.mcreator.odmsttuf.item.WaterPickaxeItem;
 import net.mcreator.odmsttuf.item.WarhammerOfZillyhooItem;
+import net.mcreator.odmsttuf.item.TimeTravelClockItem;
 import net.mcreator.odmsttuf.item.SteampunkGlassesItem;
 import net.mcreator.odmsttuf.item.CursedArtifactItem;
 import net.mcreator.odmsttuf.item.AdamarmorItem;
@@ -26,6 +27,7 @@ public class OdmsttufModItems {
 	public static final RegistryObject<Item> WATER_PICKAXE = REGISTRY.register("water_pickaxe", () -> new WaterPickaxeItem());
 	public static final RegistryObject<Item> ADAMARMOR_HELMET = REGISTRY.register("adamarmor_helmet", () -> new AdamarmorItem.Helmet());
 	public static final RegistryObject<Item> ADAMSSTARS = REGISTRY.register("adamsstars", () -> new ADAMSSTARSItem());
+	public static final RegistryObject<Item> TIME_TRAVEL_CLOCK = REGISTRY.register("time_travel_clock", () -> new TimeTravelClockItem());
 	// Start of user code block custom items
 	// End of user code block custom items
 }

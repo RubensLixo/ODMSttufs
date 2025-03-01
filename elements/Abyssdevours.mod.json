@@ -1,0 +1,12 @@
+{
+  "_fv": 66,
+  "_type": "damagetype",
+  "definition": {
+    "exhaustion": 100.0,
+    "scaling": "always",
+    "effects": "drowning",
+    "normalDeathMessage": "abyss devours %1$s",
+    "itemDeathMessage": "abyss devours %1$s",
+    "playerDeathMessage": "%1$s died whilst trying to escape of te abyss"
+  }
+}
