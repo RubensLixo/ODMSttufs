@@ -592,12 +592,7 @@
         "files": [
           "src/main/java/net/mcreator/odmsttuf/procedures/TimeTravelClockRightclickedProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/isa"
     },
@@ -710,14 +705,31 @@
       "path": "~/thur/CursedArtifact"
     },
     {
-      "name": "Butaopraativar",
+      "name": "Warden",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warden",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/odmsttuf/models/item/warden_boots.json",
+          "src/main/resources/assets/odmsttuf/models/item/warden_helmet.json",
+          "src/main/java/net/mcreator/odmsttuf/item/WardenItem.java",
+          "src/main/resources/assets/odmsttuf/models/item/warden_chestplate.json",
+          "src/main/resources/assets/odmsttuf/models/item/warden_leggings.json"
+        ]
+      },
+      "path": "~/drake"
+    },
+    {
+      "name": "WardenChestplateTickEvent",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "butaopraativar",
+      "registry_name": "warden_chestplate_tick_event",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/odmsttuf/procedures/ButaopraativarProcedure.java"
+          "src/main/java/net/mcreator/odmsttuf/procedures/WardenChestplateTickEventProcedure.java"
         ],
         "dependencies": [
           {
@@ -725,40 +737,8 @@
             "type": "entity"
           },
           {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/thur/CursedArtifact"
-    },
-    {
-      "name": "ActivateAgonizingAura",
-      "type": "keybind",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "activate_agonizing_aura",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/odmsttuf/network/ActivateAgonizingAuraMessage.java"
-        ]
-      },
-      "path": "~/thur/CursedArtifact"
-    },
-    {
-      "name": "Sedededesangue",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sedededesangue",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/odmsttuf/procedures/SedededesangueProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "sourceentity",
-            "type": "entity"
+            "name": "itemstack",
+            "type": "itemstack"
           },
           {
             "name": "world",
@@ -766,7 +746,7 @@
           }
         ]
       },
-      "path": "~/thur/CursedArtifact"
+      "path": "~/drake"
     }
   ],
   "variable_elements": [
@@ -787,18 +767,6 @@
       "type": "number",
       "scope": "map",
       "value": "0.0"
-    },
-    {
-      "name": "fasttime",
-      "type": "number",
-      "scope": "map",
-      "value": "0.0"
-    },
-    {
-      "name": "ativadoheart",
-      "type": "number",
-      "scope": "map",
-      "value": "0"
     },
     {
       "name": "sededesangueheart",
@@ -823,10 +791,12 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
+      "item.odmsttuf.warden_boots": "Warden Boots",
       "death.attack.abyssdevours.item": "abyss devours %1$s",
       "death.attack.godtierdamage": "%1$s WAS KILLED BY THE GOD OF THE AIR",
       "death.attack.godtierdamage.player": "%1$s WAS KILLED BY THE GOD OF THE AIR",
       "death.attack.abyssdevours.player": "%1$s died whilst trying to escape of te abyss",
+      "item.odmsttuf.warden_chestplate": "Warden Chestplate",
       "item.odmsttuf.water_pickaxe": "Water Pickaxe",
       "advancements.almadisao.descr": "conquista thur",
       "item.odmsttuf.warhammer_of_zillyhoo": "Real Warhammer Of Zillyhoo",
@@ -837,9 +807,10 @@
       "advancements.almadisao.title": "DEUS DA MALDIÇÃO",
       "item.odmsttuf.cursed_artifact": "Profane Heart",
       "curios.identifier.heart": "Heart",
-      "key.odmsttuf.activate_agonizing_aura": "Activate Agonizing Aura",
+      "item.odmsttuf.warden_helmet": "Warden skin Helmet",
       "death.attack.abyssdevours": "abyss devours %1$s",
-      "item.odmsttuf.steampunk_glasses": "Steampunk Glasses"
+      "item.odmsttuf.steampunk_glasses": "Steampunk Glasses",
+      "item.odmsttuf.warden_leggings": "Warden Leggings"
     }
   },
   "foldersRoot": {

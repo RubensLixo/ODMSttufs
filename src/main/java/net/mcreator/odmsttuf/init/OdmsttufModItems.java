@@ -12,6 +12,7 @@ import net.minecraft.world.item.Item;
 
 import net.mcreator.odmsttuf.item.WaterPickaxeItem;
 import net.mcreator.odmsttuf.item.WarhammerOfZillyhooItem;
+import net.mcreator.odmsttuf.item.WardenItem;
 import net.mcreator.odmsttuf.item.TimeTravelClockItem;
 import net.mcreator.odmsttuf.item.SteampunkGlassesItem;
 import net.mcreator.odmsttuf.item.CursedArtifactItem;
@@ -28,6 +29,10 @@ public class OdmsttufModItems {
 	public static final RegistryObject<Item> ADAMARMOR_HELMET = REGISTRY.register("adamarmor_helmet", () -> new AdamarmorItem.Helmet());
 	public static final RegistryObject<Item> ADAMSSTARS = REGISTRY.register("adamsstars", () -> new ADAMSSTARSItem());
 	public static final RegistryObject<Item> TIME_TRAVEL_CLOCK = REGISTRY.register("time_travel_clock", () -> new TimeTravelClockItem());
+	public static final RegistryObject<Item> WARDEN_HELMET = REGISTRY.register("warden_helmet", () -> new WardenItem.Helmet());
+	public static final RegistryObject<Item> WARDEN_CHESTPLATE = REGISTRY.register("warden_chestplate", () -> new WardenItem.Chestplate());
+	public static final RegistryObject<Item> WARDEN_LEGGINGS = REGISTRY.register("warden_leggings", () -> new WardenItem.Leggings());
+	public static final RegistryObject<Item> WARDEN_BOOTS = REGISTRY.register("warden_boots", () -> new WardenItem.Boots());
 	// Start of user code block custom items
 	// End of user code block custom items
 }

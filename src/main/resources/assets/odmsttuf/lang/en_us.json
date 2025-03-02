@@ -1,8 +1,10 @@
 {
+  "item.odmsttuf.warden_boots": "Warden Boots",
   "death.attack.abyssdevours.item": "abyss devours %1$s",
   "death.attack.godtierdamage": "%1$s WAS KILLED BY THE GOD OF THE AIR",
   "death.attack.godtierdamage.player": "%1$s WAS KILLED BY THE GOD OF THE AIR",
   "death.attack.abyssdevours.player": "%1$s died whilst trying to escape of te abyss",
+  "item.odmsttuf.warden_chestplate": "Warden Chestplate",
   "item.odmsttuf.water_pickaxe": "Water Pickaxe",
   "advancements.almadisao.descr": "conquista thur",
   "item.odmsttuf.warhammer_of_zillyhoo": "Real Warhammer Of Zillyhoo",
@@ -13,7 +15,8 @@
   "advancements.almadisao.title": "DEUS DA MALDIÇÃO",
   "item.odmsttuf.cursed_artifact": "Profane Heart",
   "curios.identifier.heart": "Heart",
-  "key.odmsttuf.activate_agonizing_aura": "Activate Agonizing Aura",
+  "item.odmsttuf.warden_helmet": "Warden skin Helmet",
   "death.attack.abyssdevours": "abyss devours %1$s",
-  "item.odmsttuf.steampunk_glasses": "Steampunk Glasses"
+  "item.odmsttuf.steampunk_glasses": "Steampunk Glasses",
+  "item.odmsttuf.warden_leggings": "Warden Leggings"
 }

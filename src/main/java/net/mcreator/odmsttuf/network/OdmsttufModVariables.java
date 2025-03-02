@@ -90,8 +90,6 @@ public class OdmsttufModVariables {
 		public double whozaattributes = 0.0;
 		public double adamrevives = 0.0;
 		public double ImortalidadeCondenada = 0.0;
-		public double fasttime = 0.0;
-		public double ativadoheart = 0;
 		public double sededesangueheart = 0;
 
 		public static MapVariables load(CompoundTag tag) {
@@ -104,8 +102,6 @@ public class OdmsttufModVariables {
 			whozaattributes = nbt.getDouble("whozaattributes");
 			adamrevives = nbt.getDouble("adamrevives");
 			ImortalidadeCondenada = nbt.getDouble("ImortalidadeCondenada");
-			fasttime = nbt.getDouble("fasttime");
-			ativadoheart = nbt.getDouble("ativadoheart");
 			sededesangueheart = nbt.getDouble("sededesangueheart");
 		}
 
@@ -114,8 +110,6 @@ public class OdmsttufModVariables {
 			nbt.putDouble("whozaattributes", whozaattributes);
 			nbt.putDouble("adamrevives", adamrevives);
 			nbt.putDouble("ImortalidadeCondenada", ImortalidadeCondenada);
-			nbt.putDouble("fasttime", fasttime);
-			nbt.putDouble("ativadoheart", ativadoheart);
 			nbt.putDouble("sededesangueheart", sededesangueheart);
 			return nbt;
 		}
