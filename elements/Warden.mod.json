@@ -10,6 +10,18 @@
     "textureLeggings": "warden_leggings",
     "enableBoots": true,
     "textureBoots": "warden_boots",
+    "onHelmetTick": {
+      "name": "WardenHelmetTickEvent"
+    },
+    "onBodyTick": {
+      "name": "WardenChestplateTickEvent"
+    },
+    "onLeggingsTick": {
+      "name": "WardenLeggingsTickEvent"
+    },
+    "onBootsTick": {
+      "name": "WardenBootsTickEvent"
+    },
     "creativeTabs": [
       {
         "value": "COMBAT"
@@ -17,9 +29,9 @@
     ],
     "armorTextureFile": "warden",
     "helmetName": "Warden skin Helmet",
-    "bodyName": "Warden Chestplate",
-    "leggingsName": "Warden Leggings",
-    "bootsName": "Warden Boots",
+    "bodyName": "Warden skin Chestplate",
+    "leggingsName": "Warden skin Leggings",
+    "bootsName": "Warden skin Boots",
     "helmetSpecialInformation": {
       "fixedValue": []
     },

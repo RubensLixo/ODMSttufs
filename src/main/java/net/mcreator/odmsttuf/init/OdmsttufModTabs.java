@@ -23,7 +23,6 @@ public class OdmsttufModTabs {
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(OdmsttufModItems.CURSED_ARTIFACT.get());
-			tabData.accept(OdmsttufModItems.STEAMPUNK_GLASSES.get());
 			tabData.accept(OdmsttufModItems.ADAMARMOR_HELMET.get());
 			tabData.accept(OdmsttufModItems.WARDEN_HELMET.get());
 			tabData.accept(OdmsttufModItems.WARDEN_CHESTPLATE.get());

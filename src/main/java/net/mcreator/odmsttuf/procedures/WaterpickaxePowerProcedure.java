@@ -20,7 +20,9 @@ public class WaterpickaxePowerProcedure {
 			return;
 		if ((world.getFluidState(BlockPos.containing(x, y, z)).createLegacyBlock()).getBlock() == Blocks.WATER) {
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == OdmsttufModItems.WATER_PICKAXE.get()) {
-				itemstack.enchant(Enchantments.BLOCK_FORTUNE, 20);
+				if (!(EnchantmentHelper.getItemEnchantmentLevel(Enchantments.BLOCK_FORTUNE, itemstack) != 0)) {
+					itemstack.enchant(Enchantments.BLOCK_FORTUNE, 20);
+				}
 			}
 		}
 		if (!((world.getFluidState(BlockPos.containing(x, y, z)).createLegacyBlock()).getBlock() == Blocks.WATER)) {

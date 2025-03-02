@@ -48,6 +48,8 @@ public class CursedArtifactWhileBaubleIsEquippedTickProcedure {
 							}
 						}
 					}
+					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+						_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 60, 2, false, false));
 				}
 				if (OdmsttufModVariables.MapVariables.get(world).ImortalidadeCondenada == 8) {
 					{
@@ -61,6 +63,8 @@ public class CursedArtifactWhileBaubleIsEquippedTickProcedure {
 							}
 						}
 					}
+					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+						_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 60, 3, false, false));
 				}
 				if (OdmsttufModVariables.MapVariables.get(world).ImortalidadeCondenada == 7) {
 					{
@@ -74,6 +78,8 @@ public class CursedArtifactWhileBaubleIsEquippedTickProcedure {
 							}
 						}
 					}
+					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+						_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 60, 4, false, false));
 				}
 				if (OdmsttufModVariables.MapVariables.get(world).ImortalidadeCondenada == 6) {
 					{
@@ -87,6 +93,8 @@ public class CursedArtifactWhileBaubleIsEquippedTickProcedure {
 							}
 						}
 					}
+					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+						_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 60, 5, false, false));
 				}
 				if (OdmsttufModVariables.MapVariables.get(world).ImortalidadeCondenada == 5) {
 					{
@@ -100,6 +108,8 @@ public class CursedArtifactWhileBaubleIsEquippedTickProcedure {
 							}
 						}
 					}
+					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+						_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 60, 6, false, false));
 				}
 				if (OdmsttufModVariables.MapVariables.get(world).ImortalidadeCondenada == 4) {
 					{
@@ -114,6 +124,8 @@ public class CursedArtifactWhileBaubleIsEquippedTickProcedure {
 							}
 						}
 					}
+					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+						_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 60, 7, false, false));
 				}
 				if (OdmsttufModVariables.MapVariables.get(world).ImortalidadeCondenada == 3) {
 					{
@@ -128,6 +140,8 @@ public class CursedArtifactWhileBaubleIsEquippedTickProcedure {
 							}
 						}
 					}
+					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+						_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 60, 8, false, false));
 				}
 				if (OdmsttufModVariables.MapVariables.get(world).ImortalidadeCondenada == 2) {
 					{
@@ -137,11 +151,13 @@ public class CursedArtifactWhileBaubleIsEquippedTickProcedure {
 							if (!(entityiterator.getDisplayName().getString()).equals("Dev")) {
 								if (!(entityiterator instanceof ItemEntity)) {
 									entityiterator.hurt(
-											new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("odmsttuf:abyssdevours"))), entity), 35);
+											new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("odmsttuf:abyssdevours"))), entity), 45);
 								}
 							}
 						}
 					}
+					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+						_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 60, 9, false, false));
 				}
 				if (OdmsttufModVariables.MapVariables.get(world).ImortalidadeCondenada == 1) {
 					{
@@ -165,9 +181,11 @@ public class CursedArtifactWhileBaubleIsEquippedTickProcedure {
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 						_entity.forceAddEffect(new MobEffectInstance(MobEffects.REGENERATION, 60, 3, false, false), entity);
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-						_entity.forceAddEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 60, 5, false, false), entity);
+						_entity.forceAddEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 60, 2, false, false), entity);
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 						_entity.forceAddEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 60, 2, false, false), entity);
+					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+						_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 60, 10, false, false));
 				}
 				OdmsttufMod.queueServerWork(1200, () -> {
 					if (Math.random() < 0.7) {
@@ -191,9 +209,9 @@ public class CursedArtifactWhileBaubleIsEquippedTickProcedure {
 					if (Math.random() == 0.7) {
 						if (world instanceof Level _level) {
 							if (!_level.isClientSide()) {
-								_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.death")), SoundSource.HOSTILE, 90, 1);
+								_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.death")), SoundSource.HOSTILE, 1, 1);
 							} else {
-								_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.death")), SoundSource.HOSTILE, 90, 1, false);
+								_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.death")), SoundSource.HOSTILE, 1, 1, false);
 							}
 						}
 					}

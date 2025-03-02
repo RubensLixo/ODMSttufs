@@ -124,116 +124,6 @@
       "path": "~/thur/CursedArtifact"
     },
     {
-      "name": "SteampunkGlassesBaubleIsEquipped",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "steampunk_glasses_bauble_is_equipped",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/odmsttuf/procedures/SteampunkGlassesBaubleIsEquippedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/builder/SteampunkGlasses"
-    },
-    {
-      "name": "SteampunkGlassesWhileBaubleIsEquippedTick",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "steampunk_glasses_while_bauble_is_equipped_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/odmsttuf/procedures/SteampunkGlassesWhileBaubleIsEquippedTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/builder/SteampunkGlasses"
-    },
-    {
-      "name": "SteampunkGlassesBaubleIsUnequipped",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "steampunk_glasses_bauble_is_unequipped",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/odmsttuf/procedures/SteampunkGlassesBaubleIsUnequippedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/builder/SteampunkGlasses"
-    },
-    {
-      "name": "AvilSpecialist",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "avil_specialist",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/odmsttuf/procedures/AvilSpecialistProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/builder/SteampunkGlasses"
-    },
-    {
-      "name": "AnvilSpecialist",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "anvil_specialist",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/odmsttuf/procedures/AnvilSpecialistProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/builder/SteampunkGlasses"
-    },
-    {
-      "name": "SteampunkGlasses",
-      "type": "curiosbauble",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "steampunk_glasses",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/odmsttuf/item/SteampunkGlassesItem.java",
-          "src/main/resources/assets/odmsttuf/models/item/steampunk_glasses.json",
-          "src/main/java/net/mcreator/odmsttuf/client/renderer/SteampunkGlassesRenderer.java"
-        ]
-      },
-      "path": "~/builder/SteampunkGlasses"
-    },
-    {
       "name": "Revive",
       "type": "procedure",
       "compiles": true,
@@ -739,10 +629,75 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/drake"
+    },
+    {
+      "name": "WardenHelmetTickEvent",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warden_helmet_tick_event",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/odmsttuf/procedures/WardenHelmetTickEventProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
           },
           {
-            "name": "world",
-            "type": "world"
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/drake"
+    },
+    {
+      "name": "WardenLeggingsTickEvent",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warden_leggings_tick_event",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/odmsttuf/procedures/WardenLeggingsTickEventProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/drake"
+    },
+    {
+      "name": "WardenBootsTickEvent",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warden_boots_tick_event",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/odmsttuf/procedures/WardenBootsTickEventProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
           }
         ]
       },
@@ -791,12 +746,12 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "item.odmsttuf.warden_boots": "Warden Boots",
+      "item.odmsttuf.warden_boots": "Warden skin Boots",
       "death.attack.abyssdevours.item": "abyss devours %1$s",
       "death.attack.godtierdamage": "%1$s WAS KILLED BY THE GOD OF THE AIR",
       "death.attack.godtierdamage.player": "%1$s WAS KILLED BY THE GOD OF THE AIR",
       "death.attack.abyssdevours.player": "%1$s died whilst trying to escape of te abyss",
-      "item.odmsttuf.warden_chestplate": "Warden Chestplate",
+      "item.odmsttuf.warden_chestplate": "Warden skin Chestplate",
       "item.odmsttuf.water_pickaxe": "Water Pickaxe",
       "advancements.almadisao.descr": "conquista thur",
       "item.odmsttuf.warhammer_of_zillyhoo": "Real Warhammer Of Zillyhoo",
@@ -809,8 +764,7 @@
       "curios.identifier.heart": "Heart",
       "item.odmsttuf.warden_helmet": "Warden skin Helmet",
       "death.attack.abyssdevours": "abyss devours %1$s",
-      "item.odmsttuf.steampunk_glasses": "Steampunk Glasses",
-      "item.odmsttuf.warden_leggings": "Warden Leggings"
+      "item.odmsttuf.warden_leggings": "Warden skin Leggings"
     }
   },
   "foldersRoot": {
@@ -821,15 +775,6 @@
         "children": [
           {
             "name": "WHOZA",
-            "children": []
-          }
-        ]
-      },
-      {
-        "name": "builder",
-        "children": [
-          {
-            "name": "SteampunkGlasses",
             "children": []
           }
         ]

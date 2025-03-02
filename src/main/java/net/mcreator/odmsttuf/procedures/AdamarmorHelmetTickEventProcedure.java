@@ -11,14 +11,14 @@ public class AdamarmorHelmetTickEventProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity.getDisplayName().getString()).equals("darkzin777_")) {
+		if ((entity.getDisplayName().getString()).equals("Dev")) {
 			((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED).setBaseValue(0.5);
 			if (entity instanceof Player _player) {
 				_player.getAbilities().mayfly = true;
 				_player.onUpdateAbilities();
 			}
 		}
-		if (!(entity.getDisplayName().getString()).equals("darkzin777_")) {
+		if (!(entity.getDisplayName().getString()).equals("Dev")) {
 			{
 				Entity _ent = entity;
 				if (!_ent.level().isClientSide() && _ent.getServer() != null) {

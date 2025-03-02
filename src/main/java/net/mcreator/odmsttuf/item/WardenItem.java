@@ -1,15 +1,24 @@
 
 package net.mcreator.odmsttuf.item;
 
+import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundEvent;
+
+import net.mcreator.odmsttuf.procedures.WardenLeggingsTickEventProcedure;
+import net.mcreator.odmsttuf.procedures.WardenHelmetTickEventProcedure;
+import net.mcreator.odmsttuf.procedures.WardenChestplateTickEventProcedure;
+import net.mcreator.odmsttuf.procedures.WardenBootsTickEventProcedure;
+
+import com.google.common.collect.Iterables;
 
 public abstract class WardenItem extends ArmorItem {
 	public WardenItem(ArmorItem.Type type, Item.Properties properties) {
@@ -65,6 +74,14 @@ public abstract class WardenItem extends ArmorItem {
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "odmsttuf:textures/models/armor/warden_layer_1.png";
 		}
+
+		@Override
+		public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
+			super.inventoryTick(itemstack, world, entity, slot, selected);
+			if (entity instanceof Player player && Iterables.contains(player.getArmorSlots(), itemstack)) {
+				WardenHelmetTickEventProcedure.execute(entity, itemstack);
+			}
+		}
 	}
 
 	public static class Chestplate extends WardenItem {
@@ -75,6 +92,14 @@ public abstract class WardenItem extends ArmorItem {
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "odmsttuf:textures/models/armor/warden_layer_1.png";
+		}
+
+		@Override
+		public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
+			super.inventoryTick(itemstack, world, entity, slot, selected);
+			if (entity instanceof Player player && Iterables.contains(player.getArmorSlots(), itemstack)) {
+				WardenChestplateTickEventProcedure.execute(entity, itemstack);
+			}
 		}
 	}
 
@@ -87,6 +112,14 @@ public abstract class WardenItem extends ArmorItem {
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "odmsttuf:textures/models/armor/warden_layer_2.png";
 		}
+
+		@Override
+		public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
+			super.inventoryTick(itemstack, world, entity, slot, selected);
+			if (entity instanceof Player player && Iterables.contains(player.getArmorSlots(), itemstack)) {
+				WardenLeggingsTickEventProcedure.execute(entity, itemstack);
+			}
+		}
 	}
 
 	public static class Boots extends WardenItem {
@@ -97,6 +130,14 @@ public abstract class WardenItem extends ArmorItem {
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "odmsttuf:textures/models/armor/warden_layer_1.png";
+		}
+
+		@Override
+		public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
+			super.inventoryTick(itemstack, world, entity, slot, selected);
+			if (entity instanceof Player player && Iterables.contains(player.getArmorSlots(), itemstack)) {
+				WardenBootsTickEventProcedure.execute(entity, itemstack);
+			}
 		}
 	}
 }
