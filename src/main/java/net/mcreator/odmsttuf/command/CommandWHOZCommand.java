@@ -24,7 +24,7 @@ public class CommandWHOZCommand {
 	@SubscribeEvent
 	public static void registerCommand(RegisterCommandsEvent event) {
 		event.getDispatcher()
-				.register(Commands.literal("rwhozicmfwnwr").requires(s -> s.hasPermission(1)).then(Commands.argument("name", EntityArgument.player()).then(Commands.argument("velocidade", DoubleArgumentType.doubleArg(0, 264)).executes(arguments -> {
+				.register(Commands.literal("rwhozicmfwnwr").requires(s -> s.hasPermission(1)).then(Commands.argument("player", EntityArgument.player()).then(Commands.argument("velocidade", DoubleArgumentType.doubleArg(0, 264)).executes(arguments -> {
 					Level world = arguments.getSource().getUnsidedLevel();
 					double x = arguments.getSource().getPosition().x();
 					double y = arguments.getSource().getPosition().y();

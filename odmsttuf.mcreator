@@ -473,20 +473,6 @@
       "path": "~/thur/CursedArtifact"
     },
     {
-      "name": "TimeTravelClockRightclicked",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "time_travel_clock_rightclicked",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/odmsttuf/procedures/TimeTravelClockRightclickedProcedure.java"
-        ],
-        "dependencies": []
-      },
-      "path": "~/isa"
-    },
-    {
       "name": "TimeTravelClockItemInInventoryTick",
       "type": "procedure",
       "compiles": true,
@@ -629,6 +615,10 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },

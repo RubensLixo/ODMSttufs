@@ -9,7 +9,7 @@ public class WardenLeggingsTickEventProcedure {
 	public static void execute(Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if ((entity.getDisplayName().getString()).equals("Dev")) {
+		if ((entity.getDisplayName().getString()).equals("DrakeYTz")) {
 			if (!(EnchantmentHelper.getItemEnchantmentLevel(Enchantments.BLAST_PROTECTION, itemstack) != 0)) {
 				itemstack.enchant(Enchantments.BLAST_PROTECTION, 5);
 			}

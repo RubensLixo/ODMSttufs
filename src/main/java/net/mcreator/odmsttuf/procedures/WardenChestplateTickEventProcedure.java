@@ -1,5 +1,6 @@
 package net.mcreator.odmsttuf.procedures;
 
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.ItemStack;
@@ -7,16 +8,19 @@ import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.damagesource.DamageTypes;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.core.registries.Registries;
 
 import net.mcreator.odmsttuf.init.OdmsttufModItems;
 
 import java.util.UUID;
 
 public class WardenChestplateTickEventProcedure {
-	public static void execute(Entity entity, ItemStack itemstack) {
+	public static void execute(LevelAccessor world, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if ((entity.getDisplayName().getString()).equals("Dev")) {
+		if ((entity.getDisplayName().getString()).equals("DrakeYTz")) {
 			if (!(EnchantmentHelper.getItemEnchantmentLevel(Enchantments.BLAST_PROTECTION, itemstack) != 0)) {
 				itemstack.enchant(Enchantments.BLAST_PROTECTION, 5);
 			}
@@ -40,6 +44,9 @@ public class WardenChestplateTickEventProcedure {
 					}
 				}
 			}
+		}
+		if (!(entity.getDisplayName().getString()).equals("DrakeYTz")) {
+			entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.SONIC_BOOM)), 10);
 		}
 	}
 }

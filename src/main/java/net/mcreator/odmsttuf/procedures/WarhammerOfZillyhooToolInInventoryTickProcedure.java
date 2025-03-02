@@ -13,16 +13,15 @@ public class WarhammerOfZillyhooToolInInventoryTickProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity.getDisplayName().getString()).equals("Dev")) {
+		if ((entity.getDisplayName().getString()).equals("bomb001")) {
 			if (entity instanceof Player _player) {
 				_player.getAbilities().mayfly = true;
 				_player.onUpdateAbilities();
 			}
 		}
-		if (!(entity.getDisplayName().getString()).equals("Dev")) {
-			entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.MAGIC)), 1);
+		if (!(entity.getDisplayName().getString()).equals("bomb001")) {
 			entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("odmsttuf:godtierdamage")))), 2);
-			entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.PLAYER_ATTACK)), (float) Double.POSITIVE_INFINITY);
+			entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.MAGIC)), 1);
 		}
 	}
 }

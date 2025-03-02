@@ -31,16 +31,18 @@ public class WHOZAttrbuteblahblahunvariavelProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		if (OdmsttufModVariables.MapVariables.get(world).whozaattributes == 0) {
-			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == OdmsttufModItems.WARHAMMER_OF_ZILLYHOO.get()) {
-				OdmsttufModVariables.MapVariables.get(world).whozaattributes = 1;
-				OdmsttufModVariables.MapVariables.get(world).syncData(world);
+		if ((entity.getDisplayName().getString()).equals("bombbb001")) {
+			if (OdmsttufModVariables.MapVariables.get(world).whozaattributes == 0) {
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == OdmsttufModItems.WARHAMMER_OF_ZILLYHOO.get()) {
+					OdmsttufModVariables.MapVariables.get(world).whozaattributes = 1;
+					OdmsttufModVariables.MapVariables.get(world).syncData(world);
+				}
 			}
-		}
-		if (OdmsttufModVariables.MapVariables.get(world).whozaattributes == 0) {
-			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == OdmsttufModItems.WARHAMMER_OF_ZILLYHOO.get()) {
-				OdmsttufModVariables.MapVariables.get(world).whozaattributes = 1;
-				OdmsttufModVariables.MapVariables.get(world).syncData(world);
+			if (OdmsttufModVariables.MapVariables.get(world).whozaattributes == 0) {
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == OdmsttufModItems.WARHAMMER_OF_ZILLYHOO.get()) {
+					OdmsttufModVariables.MapVariables.get(world).whozaattributes = 1;
+					OdmsttufModVariables.MapVariables.get(world).syncData(world);
+				}
 			}
 		}
 	}
